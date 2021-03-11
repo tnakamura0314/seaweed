@@ -7,8 +7,9 @@
 | nickname           | string | null: false                |
 | email              | string | null: false                |
 | encrypted_password | string | null: false                |
-| position_id        | string | null: false, (active_hash) |
+| birthday           | date   | null: false                |
 | sex_id             | string | null: false, (active_hash) |
+| position_id        | string | null: false, (active_hash) |
 | household_id       | string | null: false, (active_hash) |
 
 ### Association

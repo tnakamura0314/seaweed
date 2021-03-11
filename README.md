@@ -1,24 +1,32 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                    |
+| ------------------ | ------ | -------------------------- |
+| nickname           | string | null: false                |
+| email              | string | null: false                |
+| encrypted_password | string | null: false                |
+| position_id        | string | null: false, (active_hash) |
+| sex_id             | string | null: false, (active_hash) |
+| household_id       | string | null: false, (active_hash) |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :foods
 
-* Configuration
 
-* Database creation
+## foodsテーブル
 
-* Database initialization
+| Column           | Type       | Options                        |
+| ---------------- | ---------- | ------------------------------ |
+| name             | string     | null: false                    |
+| quantity_id      | integer    | null: false, (active_hash)     |
+| sell_by_id       | integer    | null: false, (active_hash)     |
+| expiration_id    | integer    | null: false, (active_hash)     |
+| status           | radio      |                                |
+| user             | references | null: false, foreign_key: true |
 
-* How to run the test suite
+### Association
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- belongs_to :user

@@ -1,20 +1,20 @@
 <header class="top-page-header">
   <%= link_to image_tag("furima-logo-color.png", class:"seaweed-logo"), "/"%>
   <ul class = "lists-right">
-    <%# <% if user_signed_in? %>
-      <%# <li><%= link_to current_user.nickname, "#", class: "user-nickname" </li> %>
-      <%# <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" </li> %>
-    <%# <% else %>
-      <li><%= link_to 'ログイン', "#", class: "login" %></li>
-      <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
-    <%# <% end %>
+    <% if user_signed_in? %>
+      <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+    <% else %>
+      <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+    <% end %>
   </ul>
 </header>
 
 <body>
   <%= image_tag "IMG_7008.jpeg", class:"top-image" %>
   <!-- GALLERY -->
-    <%# <% if user_signed_in? %>
+    <% if user_signed_in? %>
     <div class="gallery">
       <header>
         <h1><span>🍴食品の管理一覧🍴</span></h1>
@@ -25,7 +25,7 @@
         <li><%= link_to image_tag("photo10.jpeg", class:"loss-image"), "#" %></li>
       </ul>
     </div>
-    <%# <% end %>
+    <% end %>
   <!-- // GALLERY -->
   <!-- PRODUCT -->
     <div class="product">
@@ -33,9 +33,13 @@
         <h1><span>🍴アプリの説明🍴</span></h1>
       </header>
       <div class="text">
-        家庭用の冷蔵庫における食品在庫管理アプリケーションを作成しました。<br>
-        1人1人のユーザーが食品ロスの削減を目標とし、冷蔵庫の食材を管理することで、<br>
-        SDGsへの関心・貢献の意識を持てる社会を目指します。
+        家庭用の冷蔵庫における食品在庫管理アプリケーションです。<br>
+        冷蔵庫の食品を新規登録することで、食品一覧ページで一括管理が可能です。<br>
+        また、消費した食品/廃棄ロスしてしまった食品も月毎にカレンダーで一覧表示することができます。<br>
+        <br>
+        さぁ、あなたもこのアプリケーションを活用して、冷蔵庫の食品を管理する習慣を身につけましょう。<br>
+        <br>
+        ※新規登録完了後に、食品管理ページが表示されます。<br>
       </div>
     </div>
   <!-- // PRODUCT -->
@@ -45,6 +49,9 @@
         <h1><span>🍴アプリの思い🍴</span></h1>
       </header>
       <div class="text">
+        1人1人のユーザーが食品ロスの削減を目標とし、冷蔵庫の食材を管理することで、<br>
+        SDGsへの関心・貢献の意識を持てる社会を目指します。<br>
+        <br>
         SDGsとは？<br>
         Sustainable Development Goals（持続可能な開発目標）」の略称のことです。<br>
         2015年9月の国連サミットで採択され、国連加盟193ヶ国が2016年〜2030年の15年間で達成するために掲げた目標です。<br>

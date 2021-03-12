@@ -22,6 +22,13 @@
 	
 }
 
+.user-nickname{
+	text-decoration: none;
+	color: black;
+	margin-right: 3vw;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
 .logout {
   text-decoration: none;
   color: black;
@@ -64,14 +71,17 @@ span {
 
 .food-image{
 	width: 25vw;
+	border-radius: 10px;
 }
 
 .consumption-image{
 	width: 25vw;
+	border-radius: 10px;
 }
 
 .loss-image{
 	width: 25vw;
+	border-radius: 10px;
 }
 
 .text{

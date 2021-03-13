@@ -1,24 +1,52 @@
+<%= render "shared/header" %>
+
 <%# 商品一覧 %>
   <div class='food-title'>
-    <h2 class='title'>冷蔵庫の食品一覧</h2>
-    <%= link_to '食品追加', new_food_path, class: "new-food" %>
+    <div class='title'>
+    冷蔵庫の食品一覧
+    </div>
+    <div class = 'new-food'>
+      <%= link_to '食品追加', new_food_path, class: "new-food1" %>
+    </div>
   </div>
 
   <div class='food-contents'>
     <ul class='food-lists'>
-      <% if @items.present? %>
-        <% @food.each do |food|%>
+      <% if @foods.present? %>
+        <% @foods.each do |food|%>
           <li class='list'>
-            <%= link_to "#" do %>
+            <%= link_to "#", class: 'food-link' do %>
               <div class='food-img-content'>
-                <%= image_tag "", class: "food-img" %>
+                <% if food.image.blank? %>
+                  <%= image_tag '2186323_s.jpg', class: "food-img" %>
+                <% else %>
+                  <%= image_tag food.image, class: "food-img" if food.image.attached? %>
+                <% end %>
               </div>
               <div class='food-info'>
-                <h3 class='food-name'>
-                  <%= "商品名" %>
-                </h3>
-                <div class='food-price'>
-                  <span><%= "販売価格" %>円<br><%= '配送料負担' %></span>
+                <div class='food-name'>
+                  <div class = 'food-name1'>
+                  【食品名】
+                  </div>
+                  <div class = 'food-name2'>
+                  <%= food.name %>
+                  </div>
+                </div>
+                <div class='food-quantity'>
+                  <div class = 'food-quantity1'>
+                    【数量】
+                  </div>
+                  <div class = 'ood-quantity2'>
+                    <%= food.number %><%= food.quantity.name %>
+                  </div>
+                </div>
+                <div class = 'food-deadline'>
+                  <div class = 'food-deadline1'>
+                    【賞味･消費期限】
+                  </div>
+                  <div class = 'food-deadline2'>
+                    <%= food.deadline %>
+                  </div>
                 </div>
               </div>
             <% end %>

@@ -1,0 +1,43 @@
+.top-page-header {
+  width: 100vw;
+  padding: 1vh 5vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  background-color: cadetblue;
+}
+
+.seaweed-logo{
+	width: 10vw;
+}
+
+.lists-right {
+  display: flex;
+  list-style: none;
+	font-size: 18px;
+  padding: 1vh 0;
+	
+}
+
+.user-nickname{
+	text-decoration: none;
+	color: black;
+	margin-right: 3vw;
+}
+
+.logout {
+  text-decoration: none;
+  color: black;
+}
+
+.login {
+  text-decoration: none;
+  color: black;
+	margin-right: 3vw;
+}
+
+.sign-up {
+  text-decoration: none;
+  color: black;
+}

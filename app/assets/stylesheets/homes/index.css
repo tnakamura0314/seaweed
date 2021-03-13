@@ -2,52 +2,6 @@
   box-sizing: border-box;
 }
 
-.top-page-header {
-  width: 100vw;
-  padding: 1vh 5vw;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.seaweed-logo{
-	width: 10vw;
-}
-
-.lists-right {
-  display: flex;
-  list-style: none;
-	font-size: 18px;
-  padding: 1vh 0;
-	
-}
-
-.user-nickname{
-	text-decoration: none;
-	color: black;
-	margin-right: 3vw;
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-}
-
-.logout {
-  text-decoration: none;
-  color: black;
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-}
-
-.login {
-  text-decoration: none;
-  color: black;
-	margin-right: 3vw;
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-}
-
-.sign-up {
-  text-decoration: none;
-  color: black;
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-}
-
 .top-image {
   width:100vw;
 	padding-bottom: 40px;

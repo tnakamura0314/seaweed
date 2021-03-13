@@ -1,35 +1,32 @@
 /* 商品一覧 */
+.food-title{
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
 
 .title {
   background-color: #FFF;
   text-align: center;
   padding: 10vh 0 0 0;
   font-size: 40px;
-  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
 
 .new-food{
-  text-align: right;
-  font-size: 30px;
-  margin-left: 850px;
+  text-align: right; 
+  margin:50px 50px 0 0;
+}
+
+.new-food1{
   text-decoration: none;
   background-color: green;
   border: 7px solid green;
   color: white;
   border-radius: 4px;
-  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  font-size: 30px;
 }
 
 .food-contents{
   margin-top: 8vh;
-}
-
-.food-contents>.subtitle {
-  font-size: 3vh;
-  margin: 1vh 0;
-  text-decoration: none;
-  color: #3ccace;
-  font-weight: bold;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
 
 .food-lists {
@@ -43,32 +40,45 @@
   width: 37vh;
   padding: 1vw;
   background-color: #FFF;
+  border: 1px solid gray;
+  margin: 4px;
+  border-radius: 10px;
 }
 
+.food-link{
+  text-decoration: none;
+}
 
 .food-img-content {
-  position: relative;
+  text-align: center;
 }
 
 .food-img {
   width: 33vh;
   height: 33vh;
+  border-radius: 30px;
 }
 
 .food-info {
-  background-color: #FFF;
   color: black;
-  padding: 1vw;
+  font-size: 19px;
 }
 
 .food-name {
-  font-size: 2.5vh;
+  display: flex;
+
 }
 
-.food-price {
-  font-size: 1.5vh;
+.food-name2{
+  color: green;
+}
+
+.food-quantity {
   display: flex;
-  justify-content: space-between;
+}
+
+.food-deadline{
+  display: flex;
 }
 
 /* //商品一覧 */

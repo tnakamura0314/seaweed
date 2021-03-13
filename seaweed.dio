@@ -1,19 +1,19 @@
-<mxfile host="65bd71144e" modified="2021-03-11T16:26:38.097Z" agent="5.0 (Macintosh; Intel Mac OS X 11_2_2) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.53.2 Chrome/87.0.4280.141 Electron/11.2.1 Safari/537.36" etag="31ahIDh9O67vzbmK1mmV" version="14.2.4" type="embed">
+<mxfile>
     <diagram id="b5fG7cNZI4kyyGxQFFN1" name="ページ1">
-        <mxGraphModel dx="255" dy="773" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="210" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=20;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#66FF66;" parent="1" vertex="1">
+                <mxCell id="2" value="users" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=20;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;strokeColor=#006EAF;fontColor=#FFFFFF;fillColor=#1BA1E2;" parent="1" vertex="1">
                     <mxGeometry x="80" y="40" width="240" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="+nickname&#10;+email&#10;+ecrypted_password&#10;+birthday&#10;+sex&#10;+position&#10;+household" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#66FF66;" parent="2" vertex="1">
+                <mxCell id="3" value="+nickname&#10;+email&#10;+ecrypted_password&#10;+birthday&#10;+sex&#10;+position&#10;+household" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#FFFFFF;" parent="2" vertex="1">
                     <mxGeometry y="40" width="240" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="foods" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=20;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#66FF66;" parent="1" vertex="1">
+                <mxCell id="4" value="foods" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;rounded=1;fontSize=20;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;fillColor=#1ba1e2;strokeColor=#006EAF;fontColor=#FFFFFF;" parent="1" vertex="1">
                     <mxGeometry x="80" y="400" width="240" height="200" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="+name&#10;+quantity&#10;+sell_by&#10;+expriation_date&#10;+status&#10;+user" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#66FF66;" parent="4" vertex="1">
+                <mxCell id="5" value="+name&#10;+number&#10;+quantity_id&#10;+deadline&#10;+status&#10;+user" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=15;verticalAlign=top;resizable=0;rotatable=0;part=1;fontColor=#FFFFFF;" parent="4" vertex="1">
                     <mxGeometry y="40" width="240" height="160" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="" style="endArrow=none;html=1;rounded=0;fontSize=17;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;fillColor=#1ba1e2;strokeColor=#006EAF;" parent="1" source="4" target="3" edge="1">

@@ -17,4 +17,11 @@ class User < ApplicationRecord
     validates :position_id
     validates :household_id
   end
+
+  has_many :foods
+
+  extend ActiveHash::Associations::ActiveRecordExtensions
+  belongs_to :sex
+  belongs_to :position
+  belongs_to :household
 end

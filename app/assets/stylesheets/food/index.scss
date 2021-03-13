@@ -1,0 +1,74 @@
+/* 商品一覧 */
+
+.title {
+  background-color: #FFF;
+  text-align: center;
+  padding: 10vh 0 0 0;
+  font-size: 40px;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.new-food{
+  text-align: right;
+  font-size: 30px;
+  margin-left: 850px;
+  text-decoration: none;
+  background-color: green;
+  border: 7px solid green;
+  color: white;
+  border-radius: 4px;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.food-contents{
+  margin-top: 8vh;
+}
+
+.food-contents>.subtitle {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.food-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.food-lists>.list {
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+
+.food-img-content {
+  position: relative;
+}
+
+.food-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+.food-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.food-name {
+  font-size: 2.5vh;
+}
+
+.food-price {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* //商品一覧 */

@@ -12,7 +12,7 @@
 </header>
 
 <body>
-  <%= image_tag "IMG_7008.jpeg", class:"top-image" %>
+  <%= image_tag "top_image.jpeg", class:"top-image" %>
   <!-- GALLERY -->
     <% if user_signed_in? %>
     <div class="gallery">
@@ -20,7 +20,7 @@
         <h1><span>🍴食品の管理一覧🍴</span></h1>
       </header>
       <ul class="gallery-image">
-        <li><%= link_to image_tag("photo08.jpeg", class:"food-image"), "#" %></li>
+        <li><%= link_to image_tag("photo08.jpeg", class:"food-image"), foods_path %></li>
         <li><%= link_to image_tag("photo09.jpeg", class:"consumption-image"), "#" %></li>
         <li><%= link_to image_tag("photo10.jpeg", class:"loss-image"), "#" %></li>
       </ul>
@@ -82,4 +82,7 @@
       </div>
     </div>
   <!-- // NEWS -->
+
+  <footer>
+  </footer>
 </body>

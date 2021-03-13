@@ -1,0 +1,44 @@
+<%# 商品一覧 %>
+  <div class='food-title'>
+    <h2 class='title'>冷蔵庫の食品一覧</h2>
+    <%= link_to '食品追加', new_food_path, class: "new-food" %>
+  </div>
+
+  <div class='food-contents'>
+    <ul class='food-lists'>
+      <% if @items.present? %>
+        <% @food.each do |food|%>
+          <li class='list'>
+            <%= link_to "#" do %>
+              <div class='food-img-content'>
+                <%= image_tag "", class: "food-img" %>
+              </div>
+              <div class='food-info'>
+                <h3 class='food-name'>
+                  <%= "商品名" %>
+                </h3>
+                <div class='food-price'>
+                  <span><%= "販売価格" %>円<br><%= '配送料負担' %></span>
+                </div>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+      <% else %>
+        <li class='list'>
+          <%= link_to '#' do %>
+            <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "food-img" %>
+            <div class='food-info'>
+              <h3 class='food-name'>
+                商品を出品してね！
+              </h3>
+              <div class='food-price'>
+                <span>99999999円<br>(税込み)</span>
+              </div>
+            </div>
+          <% end %>
+        </li>
+      <% end%>
+    </ul>
+  </div>
+<%# /商品一覧 %>

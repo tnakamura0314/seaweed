@@ -10,12 +10,13 @@ class Quantity < ActiveHash::Base
     { id: 8, name: 'l(リットル)' },
     { id: 9, name: 'cc(シーシー)' },
     { id: 10, name: 'パック' },
-    { id: 11, name: '人前' },
-    { id: 12, name: '袋' },
-    { id: 13, name: '枚' },
-    { id: 14, name: '片' },
-    { id: 15, name: '杯' },
-    { id: 16, name: '丁' }
+    { id: 11, name: 'ボトル' },
+    { id: 12, name: '人前' },
+    { id: 13, name: '袋' },
+    { id: 14, name: '枚' },
+    { id: 15, name: '片' },
+    { id: 16, name: '杯' },
+    { id: 17, name: '丁' }
   ]
 
   include ActiveHash::Associations

@@ -33,6 +33,12 @@ class FoodsController < ApplicationController
     end
   end
 
+  def destroy
+    @food = Food.find(params[:id])
+    @food.destroy
+    redirect_to root_path
+  end
+
   private
 
   def food_params

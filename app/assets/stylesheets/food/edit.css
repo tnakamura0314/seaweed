@@ -104,7 +104,7 @@
 }
 
 .foods-status{
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .status-text{
@@ -120,28 +120,44 @@
 
 /* 下部ボタン */
 
-.sell-btn-contents {
+.edit-btn-contents {
   width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.sell-btn {
+.edit-btn {
   background: green;
   border: 1px solid green;
   color: #fff;
-  width: 100%;
-  height: 50px;
+  padding: 15px 35%;
   font-size: 14px;
   margin-bottom: 4vh;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-.back-btn {
-  background: #aaa;
-  border: 1px solid #aaa;
+.destroy-btn {
+  background: red;
+  border: 1px solid red;
   color: #fff;
-  padding: 15px 35%;
+  margin-bottom: 2vh;
+  padding: 15px 29%;
   text-decoration: none;
+  border-radius: 4px;
+}
+
+.back-btn1{
+  background: gray;
+  border: 1px solid gray;
+  color: #fff;
+  padding: 15px 31%;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
 }
 
 /* /下部ボタン */

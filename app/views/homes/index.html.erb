@@ -4,16 +4,31 @@
   <%= image_tag "top_image.jpeg", class:"top-image" %>
   <!-- GALLERY -->
     <% if user_signed_in? %>
-    <div class="gallery">
-      <header>
-        <h1><span>🍴食品の管理一覧🍴</span></h1>
-      </header>
-      <ul class="gallery-image">
-        <li><%= link_to image_tag("photo08.jpeg", class:"food-image"), foods_path %></li>
-        <li><%= link_to image_tag("photo09.jpeg", class:"consumption-image"), "#" %></li>
-        <li><%= link_to image_tag("photo10.jpeg", class:"loss-image"), "#" %></li>
-      </ul>
-    </div>
+      <div class="gallery">
+        <header>
+          <h1><span>🍴食品の管理一覧🍴</span></h1>
+        </header>
+        <ul class="gallery-image">
+          <li>
+            <%= link_to foods_path, class: 'management-image' do %>
+              <%= image_tag("480_480.jpeg", class: "food-image") %>
+              <div class = "image-text" >食品一覧</div>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to food_consumptions_path, class: 'management-image' do %>
+              <%= image_tag("374411.jpeg", class: "consumption-image") %>
+              <div class = "image-text">消費一覧</div>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to food_losses_path, class: 'management-image' do %>
+              <%= image_tag("086354.jpeg", class: "loss-image") %>
+              <div class = "image-text">廃棄一覧</div>
+            <% end %>
+          </li>
+        </ul>
+      </div>
     <% end %>
   <!-- // GALLERY -->
   <!-- PRODUCT -->

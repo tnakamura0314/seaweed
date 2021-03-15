@@ -12,63 +12,47 @@
 
   <div class='food-contents'>
     <ul class='food-lists'>
-      <% if @foods.present? %>
-        <% @foods.each do |food|%>
-          <% if food.status == 3 %>
-            <li class='list'>
-              <%= link_to edit_food_path(food.id), class: 'food-link' do %>
-                <div class='food-img-content'>
-                  <% if food.image.blank? %>
-                    <%= image_tag 'sample.jpg', class: "food-img" %>
-                  <% else %>
-                    <%= image_tag food.image, class: "food-img" if food.image.attached? %>
-                  <% end %>
-                </div>
-                <div class='food-info'>
-                  <div class='food-name'>
-                    <div class = 'food-name1'>
-                      【食品名】
-                    </div>
-                    <div class = 'food-name2'>
-                      <%= food.name %>
-                    </div>
-                  </div>
-                  <div class='food-quantity'>
-                    <div class = 'food-quantity1'>
-                      【数量】
-                    </div>
-                    <div class = 'ood-quantity2'>
-                      <%= food.number %><%= food.quantity.name %>
-                    </div>
-                  </div>
-                  <div class = 'food-deadline'>
-                    <div class = 'food-deadline1'>
-                      【賞味･消費期限】
-                    </div>
-                    <div class = 'food-deadline2'>
-                      <%= food.deadline %>
-                    </div>
-                  </div>
-                </div>
-              <% end %>
-            </li>
-          <% end %>
-        <% end %>
-      <% else %>
-        <li class='list'>
-          <%= link_to '#' do %>
-            <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "food-img" %>
-            <div class='food-info'>
-              <h3 class='food-name'>
-                商品を出品してね！
-              </h3>
-              <div class='food-price'>
-                <span>99999999円<br>(税込み)</span>
+      <% @foods.each do |food|%>
+        <% if food.status == 3 %>
+          <li class='list'>
+            <%= link_to edit_food_path(food.id), class: 'food-link' do %>
+              <div class='food-img-content'>
+                <% if food.image.blank? %>
+                  <%= image_tag 'sample.jpg', class: "food-img" %>
+                <% else %>
+                  <%= image_tag food.image, class: "food-img" if food.image.attached? %>
+                <% end %>
               </div>
-            </div>
-          <% end %>
-        </li>
-      <% end%>
+              <div class='food-info'>
+                <div class='food-name'>
+                  <div class = 'food-name1'>
+                    【食品名】
+                  </div>
+                  <div class = 'food-name2'>
+                    <%= food.name %>
+                  </div>
+                </div>
+                <div class='food-quantity'>
+                  <div class = 'food-quantity1'>
+                    【数量】
+                  </div>
+                  <div class = 'ood-quantity2'>
+                    <%= food.number %><%= food.quantity.name %>
+                  </div>
+                </div>
+                <div class = 'food-deadline'>
+                  <div class = 'food-deadline1'>
+                    【賞味･消費期限】
+                  </div>
+                  <div class = 'food-deadline2'>
+                    <%= food.deadline %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </li>
+        <% end %>
+      <% end %>
     </ul>
   </div>
 <%# /商品一覧 %>

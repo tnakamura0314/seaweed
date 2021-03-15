@@ -1,0 +1,104 @@
+<div class="foods-sell-contents">
+  <header class="foods-sell-header">
+    <%= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
+
+  </header>
+
+  <div class="foods-sell-main">
+    <h2 class="foods-sell-title">食品情報を編集</h2>
+    <%= form_with model: @food, url: food_path(@food.id), local: true do |f| %>
+
+      <%= render 'shared/error_messages', model: f.object %>
+
+      <%# 食品画像 %>
+      <div class="img-upload">
+        <label class="weight-text">食品の画像</label>
+        <span class="indispensable">任意</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"food-image" %>
+      </div>
+      <%# /食品画像 %>
+
+      <%# 食品詳細 %>
+      <div class="foods-name">
+        <label class="weight-text">食品名</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :name, size: "40x1", id:"food-name", placeholder:"食品名（30文字まで)", maxlength:"40" %>
+
+      <div class="foods-quantity">
+        <div class = "quantity-text">
+          <label class="weight-text">数量</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <div class = "quantity-form">
+          <%= f.text_area :number, size: "9x1", class:"foods-text", id:"food-info", placeholder:"数量（半角)", maxlength:"10" %>
+          <%= f.collection_select(:quantity_id, Quantity.all, :id, :name, {}, {class:"select-box", id:"food-quantity"}) %>
+        </div>
+      </div>
+
+      <div class="foods-deadline">
+        <label class="weight-text">賞味期限/消費期限</label>
+        <span class="indispensable">必須</span>
+      </div>
+      <div class='input-deadline-wrap'>
+        <%= raw sprintf(
+                  f.date_select(
+                    :deadline,
+                    class:'select-deadline',
+                    id:"deadline-date",
+                    use_month_numbers: true,
+                    prompt:'--',
+                    start_year: 2021,
+                    end_year: (Time.now.year + 15),
+                    date_separator: '%s'),
+                  "<p> &nbsp; 年 &ensp;</p>", "<p> &nbsp; 月 &ensp;</p>") + "<p> &nbsp; 日 </p>" %>
+      </div>
+      <div class="foods-status">
+        <div class = "status-text">
+          <label class="weight-text">食品の状態</label>
+          <span class="indispensable">必須</span>
+        </div>
+        <div class = "status-radio">
+          <div class="radio-inline">
+            <%= f.radio_button :status, 1, checked: "checked" %>
+            <%= f.label :status, "食品一覧", class: "food_type_label" %>
+          </div>
+          <div class="radio-inline">
+            <%= f.radio_button :status, 2 %>
+            <%= f.label :status, "消費一覧", class: "food_type_label" %>
+          </div>
+          <div class="radio-inline">
+            <%= f.radio_button :status, 3 %>
+            <%= f.label :status, "廃棄一覧", class: "food_type_label" %>
+          </div>
+        </div>
+      </div>
+      <%# /商品名と商品説明 %>
+
+      <%# 下部ボタン %>
+      <div class="sell-btn-contents">
+        <%= f.submit "編集する" ,class:"sell-btn" %>
+        <%=link_to 'もどる', root_path, class:"back-btn" %>
+        <%# <%=link_to '削除する', , class:"destroy-btn" %>
+      </div>
+      <%# /下部ボタン %>
+    <% end %>
+  </div>
+
+  <footer class="foods-sell-footer">
+    <ul class="menu">
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="#">Seaweed利用規約</a></li>
+      <li><a href="#">特定商取引に関する表記</a></li>
+    </ul>
+    <%= link_to image_tag('furima-logo-color.png' , size: '185x50'), "/" %>
+    <p class="inc">
+      ©︎Seaweed,Inc.
+    </p>
+  </footer>
+</div>

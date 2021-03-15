@@ -91,7 +91,6 @@
 
 .foods-text{
   margin-right: 15px;
-  width
 }
 
 .foods-deadline{
@@ -103,9 +102,6 @@
 .input-deadline-wrap{
   display: flex;
   margin-bottom: 80px;
-}
-
-.select-deadline{
 }
 
 /* 下部ボタン */

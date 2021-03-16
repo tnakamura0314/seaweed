@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 .top-page-header {
   width: 100vw;
+  height:8vh;
   padding: 0.7vh 5vw;
 	display: flex;
 	align-items: center;
@@ -10,26 +15,30 @@
 }
 
 .seaweed-logo{
-	width: 10vw;
+	width: 15vw;
 }
 
 .top-left {
   display: flex;
   list-style: none;
-	font-size: 14px;
+	font-size: 1.4vw;
   padding: 1.3vh 0;
+  width:65vw;
 }
 
 .lists-left{
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
 }
 
 .lists-left-product{
-  margin: 0 40px 0 50px;
+
   cursor: pointer;
   padding-bottom: 10px;
   position: relative;
+  margin-right: 4vw;
 }
 
 .lists-left-product::after {
@@ -39,7 +48,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  border-bottom: 3px solid black;
+  border-bottom: 0.4vh solid black;
   transition: all 0.5s ease 0.2s;
 }
 
@@ -48,7 +57,7 @@
 }
 
 .lists-left-message{
-  margin-right: 40px;
+  margin-right: 4vw;
   cursor: pointer;
   padding-bottom: 10px;
   position: relative;
@@ -61,7 +70,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  border-bottom: 3px solid black;
+  border-bottom: 0.4vh solid black;
   transition: all 0.5s ease 0.2s;
 }
 
@@ -82,8 +91,8 @@
   left: 0;
   width: 0;
   height: 1px;
-  border-bottom: 3px solid black;
-  transition: all 0.5s ease 0.2s;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.3s ease 0s;
 }
 
 .lists-left-news:hover::after {
@@ -93,10 +102,10 @@
 
 .lists-right {
   display: flex;
-  align-items: center;
   list-style: none;
-	font-size: 18px;
+	font-size: 1.9vw;
   padding: 1.3vh 0;
+  width: 20vw
 }
 
 .user-nickname{
@@ -114,7 +123,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  border-bottom: 3px solid black;
+  border-bottom: 0.4vh solid black;
   transition: all 0.5s ease 0.2s;
 }
 
@@ -136,7 +145,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  border-bottom: 3px solid black;
+  border-bottom: 0.4vh solid black;
   transition: all 0.5s ease 0.2s;
 }
 
@@ -159,7 +168,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  border-bottom: 3px solid black;
+  border-bottom: 0.4vh solid black;
   transition: all 0.5s ease 0.2s;
 }
 
@@ -181,7 +190,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  border-bottom: 3px solid black;
+  border-bottom: 0.4vh solid black;
   transition: all 0.5s ease 0.2s;
 }
 

@@ -11,19 +11,19 @@
         </div>
       </div>
       <ul class="gallery-image">
-        <li>
+        <li class = "gallery-animation">
           <%= link_to foods_path, class: 'management-image' do %>
             <%= image_tag("480_480.jpeg", class: "food-image") %>
             <div class = "image-text" >食品一覧</div>
           <% end %>
         </li>
-        <li>
+        <li class = "gallery-animation">
           <%= link_to food_consumptions_path, class: 'management-image' do %>
             <%= image_tag("374411.jpeg", class: "consumption-image") %>
             <div class = "image-text">消費一覧</div>
           <% end %>
         </li>
-        <li>
+        <li class = "gallery-animation">
           <%= link_to food_losses_path, class: 'management-image' do %>
             <%= image_tag("086354.jpeg", class: "loss-image") %>
             <div class = "image-text">廃棄一覧</div>
@@ -34,55 +34,119 @@
     <!-- // GALLERY -->
 
     <!-- PRODUCT -->
-    <div class="product">
-      <div class = "product-text">
+    <div class = "product">
+      <div class = "product-name">
         <h1><span>🍴Seaweedとは🍴</span></h1>
       </div>
     </div>
-    <div class="text">
-      家庭用の冷蔵庫における食品在庫管理アプリケーションです。<br>
-      冷蔵庫の食品を新規登録することで、食品一覧ページで一括管理が可能です。<br>
-      また、消費した食品/廃棄ロスしてしまった食品も月毎にカレンダーで一覧表示することができます。<br>
-      <br>
-      さぁ、あなたもこのアプリケーションを活用して、冷蔵庫の食品を管理する習慣を身につけましょう。<br>
-      <br>
-      ※新規登録完了後に、食品管理ページが表示されます。<br>
+    <div class = "product-main">
+      <div class = "product-text">
+        <br>
+        <span>冷蔵庫の食品を管理できるアプリです。</span><br>
+        <br>
+        ご家庭にある食品をご登録いただくことで、<br>
+        食品の一括管理ができます。<br>
+        <br>
+        また、消費/廃棄した食品も、<br>
+        食品の状態にチュックを入れるだけで、<br>
+        それぞれの一覧ページで一括管理ができます。<br>
+        <br>
+        さぁ、あなたもこのアプリを活用して、<br>
+        冷蔵庫の食品を管理する習慣を身に付けよう！<br>
+        <br>
+        <p>※新規登録後に、管理一覧が表示されます。</p><br>
+      </div>
+      <div calss = "product-image">
+        <%= image_tag("reizouko.jpeg", class: "deco-image") %>
+      </div>
     </div>
     <!-- // PRODUCT -->
 
     <!-- MESSAGE -->
     <div class="message">
-      <div class = "message-text">
+      <div class = "message-name">
         <h1><span>🍴Seaweedの思い🍴</span></h1>
       </div>
     </div>
-    <div class="text">
-      1人1人のユーザーが食品ロスの削減を目標とし、冷蔵庫の食材を管理することで、<br>
-      SDGsへの関心・貢献の意識を持てる社会を目指します。<br>
-      <br>
-      SDGsとは？<br>
-      Sustainable Development Goals（持続可能な開発目標）」の略称のことです。<br>
-      2015年9月の国連サミットで採択され、国連加盟193ヶ国が2016年〜2030年の15年間で達成するために掲げた目標です。<br>
-      今回その中でも、1人1人が取り組むことのできる、「12. つくる責任、つかう責任　持続可能な消費と生産パターンを確保する」という目標にフォーカスしました。<br>
-      <br>
-      <br>
-      日本では、発生している食品ロスの半数近くが家庭から出ております。<br>
-      この食品ロスを削減することで得られるものとしては、<br>
-      <br>
-      ◆食料を得られない人の手にも行き渡ること。<br>
-      ◆食品廃棄処理から発生する、温室効果ガスを減らし、環境の負担を削減できること。<br>
-      ◆SDGsの目標達成に貢献できること。<br>
-      <br>
-      上記などが挙げられます。<br>
-      <br>
-      この家庭から出る食品ロスを削減するためには、皆さま一人一人に行動いただく必要がございます。<br>
-      持続可能な地球・社会の実現、そして私たちの未来を守るための行動を共に進めて行きましょう。
+
+    <div class = "message-main">
+      <div>
+        <%= image_tag("seaweed.jpg", class: "deco-image") %>
+      </div>
+      <div class="message-text1">
+        <br>
+        <span>1人1人のユーザーが食品廃棄ロスの<br>
+        削減を目指し、ご家庭の食材を管理することで、<br>
+        全ての人が、SDGsへの関心・貢献の意識を持てる社会を目指します。</span><br>
+        <br>
+        アプリ名のSeaweed（シーウィード）とは、<br>
+        海藻という意味です。<br>
+        <br>
+        海藻は地球上の約2/3の酸素を、<br>
+        光合成によって生み出してくれていることは<br>
+        ご存知でしょうか？<br>
+        <br>
+        私たちも一丸となり、<br>
+        「地球環境を守ろう」という思いを込めて、<br>
+        この名前をつけさせていただきました。<br>
+        <br>
+      </div>
+    </div>
+
+    <div class = "message-main">
+      <div class="message-text2">
+        <br>
+        SDGsとは？<br>
+        Sustainable Development Goals（持続可能な開発目標）」の略称のことです。<br>
+        <br>
+        2015年9月の国連サミットで採択され、<br>
+        国連加盟193ヶ国が2016年〜2030年の<br>
+        15年間で達成するために掲げた17の目標<br>
+        のことです<br>
+        <br>
+        今回その中でも、<br>
+        1人1人が今日から取り組むことのできる、<br>
+        <span>「12. つくる責任、つかう責任<br>
+        持続可能な消費と生産パターンを確保する」</span><br>
+        という目標にフォーカスしました。<br>
+        <br>
+      </div>
+      <div>
+        <%= image_tag("sdgs.jpg", class: "deco-image") %>
+      </div>
+    </div> 
+
+    <div class = "message-main">
+      <div>
+        <%= image_tag("gomi.jpg", class: "deco-image") %>
+      </div>
+      <div class="message-text3">
+        <br>
+        日本で発生している食品ロスの半数近くが<br>
+        家庭から出ております。<br>
+        <br>
+        この食品ロスを削減することで得られるものとしては、<br>
+        <br>
+        ・食料を得られない人の手にも行き渡ること。<br>
+        ・食品廃棄処理から発生する、温室効果ガスを<br>
+        　減らし、環境の負担を削減できること。<br>
+        ・SDGsの目標達成に貢献できること。<br>
+        <br>
+        上記などが挙げられます。<br>
+        <br>
+        この家庭から出る食品ロスを削減するために<br>
+        一人一人が意識的に行動することが求められております。<br>
+        <br>
+        <span>持続可能な地球・社会の実現、<br>
+        そして、私たちの未来を守るための行動を共に進めて行きましょう！！</span><br>
+        <br>
+      </div>
     </div>
     <!-- // MESSAGE -->
 
     <!-- NEWS -->
     <div class="news">
-      <div class = "news-text">
+      <div class = "news-name">
         <h1><span>🍴NEWS🍴</span></h1>
       </div>
     </div>

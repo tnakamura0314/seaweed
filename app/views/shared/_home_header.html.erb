@@ -1,0 +1,27 @@
+<header class="top-page-header">
+  <div class = "top-left">
+    <%= link_to image_tag("furima-logo-color.png", class:"seaweed-logo"), "/"%>
+    <ul class = "lists-left">
+      <li>
+        <a herf = "#" id = "nav-product" class = "lists-left-product">Seaweedとは</a>
+      </li>
+      <li>
+        <a herf = "#" id = "nav-message" class = "lists-left-message">Seaweedの思い</a>
+      </li>
+      <li>
+        <a herf = "#" id = "nav-news" class = "lists-left-news">NEWS</a>
+      </li>
+    </ul>
+  </div>
+  <div class = "top-right">
+    <ul class = "lists-right">
+      <% if user_signed_in? %>
+        <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li>
+        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
+      <% else %>
+        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+      <% end %>
+    </ul>
+  </div>
+</header>

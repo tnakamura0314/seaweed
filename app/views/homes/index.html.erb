@@ -1,91 +1,95 @@
-<%= render "shared/header" %>
+<%= render "shared/home_header" %>
 
 <body>
   <%= image_tag "top_image.jpeg", class:"top-image" %>
-  <!-- GALLERY -->
+
+    <!-- GALLERY -->
     <% if user_signed_in? %>
       <div class="gallery">
-        <header>
+        <div class = "gallery-text">
           <h1><span>🍴食品の管理一覧🍴</span></h1>
-        </header>
-        <ul class="gallery-image">
-          <li>
-            <%= link_to foods_path, class: 'management-image' do %>
-              <%= image_tag("480_480.jpeg", class: "food-image") %>
-              <div class = "image-text" >食品一覧</div>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to food_consumptions_path, class: 'management-image' do %>
-              <%= image_tag("374411.jpeg", class: "consumption-image") %>
-              <div class = "image-text">消費一覧</div>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to food_losses_path, class: 'management-image' do %>
-              <%= image_tag("086354.jpeg", class: "loss-image") %>
-              <div class = "image-text">廃棄一覧</div>
-            <% end %>
-          </li>
-        </ul>
+        </div>
       </div>
+      <ul class="gallery-image">
+        <li>
+          <%= link_to foods_path, class: 'management-image' do %>
+            <%= image_tag("480_480.jpeg", class: "food-image") %>
+            <div class = "image-text" >食品一覧</div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to food_consumptions_path, class: 'management-image' do %>
+            <%= image_tag("374411.jpeg", class: "consumption-image") %>
+            <div class = "image-text">消費一覧</div>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to food_losses_path, class: 'management-image' do %>
+            <%= image_tag("086354.jpeg", class: "loss-image") %>
+            <div class = "image-text">廃棄一覧</div>
+          <% end %>
+        </li>
+      </ul>
     <% end %>
-  <!-- // GALLERY -->
-  <!-- PRODUCT -->
+    <!-- // GALLERY -->
+
+    <!-- PRODUCT -->
     <div class="product">
-      <header>
-        <h1><span>🍴アプリの説明🍴</span></h1>
-      </header>
-      <div class="text">
-        家庭用の冷蔵庫における食品在庫管理アプリケーションです。<br>
-        冷蔵庫の食品を新規登録することで、食品一覧ページで一括管理が可能です。<br>
-        また、消費した食品/廃棄ロスしてしまった食品も月毎にカレンダーで一覧表示することができます。<br>
-        <br>
-        さぁ、あなたもこのアプリケーションを活用して、冷蔵庫の食品を管理する習慣を身につけましょう。<br>
-        <br>
-        ※新規登録完了後に、食品管理ページが表示されます。<br>
+      <div class = "product-text">
+        <h1><span>🍴Seaweedとは🍴</span></h1>
       </div>
     </div>
-  <!-- // PRODUCT -->
-  <!-- MESSAGE -->
+    <div class="text">
+      家庭用の冷蔵庫における食品在庫管理アプリケーションです。<br>
+      冷蔵庫の食品を新規登録することで、食品一覧ページで一括管理が可能です。<br>
+      また、消費した食品/廃棄ロスしてしまった食品も月毎にカレンダーで一覧表示することができます。<br>
+      <br>
+      さぁ、あなたもこのアプリケーションを活用して、冷蔵庫の食品を管理する習慣を身につけましょう。<br>
+      <br>
+      ※新規登録完了後に、食品管理ページが表示されます。<br>
+    </div>
+    <!-- // PRODUCT -->
+
+    <!-- MESSAGE -->
     <div class="message">
-      <header>
-        <h1><span>🍴アプリの思い🍴</span></h1>
-      </header>
-      <div class="text">
-        1人1人のユーザーが食品ロスの削減を目標とし、冷蔵庫の食材を管理することで、<br>
-        SDGsへの関心・貢献の意識を持てる社会を目指します。<br>
-        <br>
-        SDGsとは？<br>
-        Sustainable Development Goals（持続可能な開発目標）」の略称のことです。<br>
-        2015年9月の国連サミットで採択され、国連加盟193ヶ国が2016年〜2030年の15年間で達成するために掲げた目標です。<br>
-        今回その中でも、1人1人が取り組むことのできる、「12. つくる責任、つかう責任　持続可能な消費と生産パターンを確保する」という目標にフォーカスしました。<br>
-        <br>
-        <br>
-        日本では、発生している食品ロスの半数近くが家庭から出ております。<br>
-        この食品ロスを削減することで得られるものとしては、<br>
-        <br>
-        ◆食料を得られない人の手にも行き渡ること。<br>
-        ◆食品廃棄処理から発生する、温室効果ガスを減らし、環境の負担を削減できること。<br>
-        ◆SDGsの目標達成に貢献できること。<br>
-        <br>
-        上記などが挙げられます。<br>
-        <br>
-        この家庭から出る食品ロスを削減するためには、皆さま一人一人に行動いただく必要がございます。<br>
-        持続可能な地球・社会の実現、そして私たちの未来を守るための行動を共に進めて行きましょう。
+      <div class = "message-text">
+        <h1><span>🍴Seaweedの思い🍴</span></h1>
       </div>
     </div>
-  <!-- // MESSAGE -->
-  <!-- NEWS -->
+    <div class="text">
+      1人1人のユーザーが食品ロスの削減を目標とし、冷蔵庫の食材を管理することで、<br>
+      SDGsへの関心・貢献の意識を持てる社会を目指します。<br>
+      <br>
+      SDGsとは？<br>
+      Sustainable Development Goals（持続可能な開発目標）」の略称のことです。<br>
+      2015年9月の国連サミットで採択され、国連加盟193ヶ国が2016年〜2030年の15年間で達成するために掲げた目標です。<br>
+      今回その中でも、1人1人が取り組むことのできる、「12. つくる責任、つかう責任　持続可能な消費と生産パターンを確保する」という目標にフォーカスしました。<br>
+      <br>
+      <br>
+      日本では、発生している食品ロスの半数近くが家庭から出ております。<br>
+      この食品ロスを削減することで得られるものとしては、<br>
+      <br>
+      ◆食料を得られない人の手にも行き渡ること。<br>
+      ◆食品廃棄処理から発生する、温室効果ガスを減らし、環境の負担を削減できること。<br>
+      ◆SDGsの目標達成に貢献できること。<br>
+      <br>
+      上記などが挙げられます。<br>
+      <br>
+      この家庭から出る食品ロスを削減するためには、皆さま一人一人に行動いただく必要がございます。<br>
+      持続可能な地球・社会の実現、そして私たちの未来を守るための行動を共に進めて行きましょう。
+    </div>
+    <!-- // MESSAGE -->
+
+    <!-- NEWS -->
     <div class="news">
-      <header>
-        <h1><span>🍴ニュース🍴</span></h1>
-      </header>
-      <div class="text">
-        ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル株式会社では最新技術と自然との調和を目な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。
+      <div class = "news-text">
+        <h1><span>🍴NEWS🍴</span></h1>
       </div>
     </div>
-  <!-- // NEWS -->
+    <div class="text">
+      ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル株式会社では最新技術と自然との調和を目な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。
+    </div>
+    <!-- // NEWS -->
 
   <%= render "shared/add_to_btn" %>
   

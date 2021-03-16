@@ -1,43 +1,190 @@
 .top-page-header {
   width: 100vw;
-  padding: 1vh 5vw;
+  padding: 0.7vh 5vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-  background-color: cadetblue;
+  background-color: #88B6A9;
+  
 }
 
 .seaweed-logo{
 	width: 10vw;
 }
 
-.lists-right {
+.top-left {
   display: flex;
   list-style: none;
+	font-size: 14px;
+  padding: 1.3vh 0;
+}
+
+.lists-left{
+  display: flex;
+  align-items: center;
+}
+
+.lists-left-product{
+  margin: 0 40px 0 50px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.lists-left-product::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.lists-left-product:hover::after {
+  width: 100%;
+}
+
+.lists-left-message{
+  margin-right: 40px;
+  cursor: pointer;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.lists-left-message::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.lists-left-message:hover::after {
+  width: 100%;
+}
+
+.lists-left-news{
+  cursor: pointer;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.lists-left-news::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.lists-left-news:hover::after {
+  width: 100%;
+}
+
+
+.lists-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
 	font-size: 18px;
-  padding: 1vh 0;
-	
+  padding: 1.3vh 0;
 }
 
 .user-nickname{
 	text-decoration: none;
 	color: black;
 	margin-right: 3vw;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.user-nickname::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.user-nickname:hover::after {
+  width: 100%;
 }
 
 .logout {
   text-decoration: none;
   color: black;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.logout::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.logout:hover::after {
+  width: 100%;
 }
 
 .login {
   text-decoration: none;
   color: black;
 	margin-right: 3vw;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.login::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.login:hover::after {
+  width: 100%;
 }
 
 .sign-up {
   text-decoration: none;
   color: black;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.sign-up::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 3px solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.sign-up:hover::after {
+  width: 100%;
 }

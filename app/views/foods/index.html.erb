@@ -6,8 +6,17 @@
     食品一覧
     </div>
   </div>
-  <%# <div class = "link">
-  </div> %>
+  <div class = "link">
+    <div class='link-title'>
+      <br>
+      おすすめレシピサイト&nbsp;<span>※外部サイトへのリンク</span>
+    </div>
+    <ul class = "link-cook">
+      <li><a href = "https://www.sirogohan.com/sp/" class = "link-deco" target = "_blank" rel="noopener noreferrer">白ごはん.com</a></li>
+      <li><a href = "https://cookpad.com/" class = "link-deco" target = "_blank" rel="noopener noreferrer">クックパッド</a></li>
+      <li><a href = "https://www.kurashiru.com/" class = "link-deco" target = "_blank" rel="noopener noreferrer">kurashiru</a></li>
+    </li>
+  </div>
   <%# <div class = "sort-page">
     <div class = "sort">
     </div> %>
@@ -16,6 +25,13 @@
       <li><%= link_to '廃棄一覧', food_losses_path, class: "page-menu2" %></li>
     </ul>
   <%# </div> %>
+  <div class = "caution">
+    <div calss = "caution-text">
+      ※賞味/消費期限については、<span class = "blue">【青色：期限が切れる3日以内】</span>/<span class = "red">【赤色：期限切れ】</span>で表示されます。<br>
+      ※食品を消費/廃棄したら、該当の食品をクリックし、編集ページで消費/廃棄にチェックを入れてください。
+    </div>
+  </div>
+
 
   <div class='food-contents'>
     <ul class='food-lists'>

@@ -16,10 +16,72 @@
   border-bottom:5px solid #88B6A9;
 }
 
+.link{
+  margin-left: 5vw;
+  width:60vw;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.link-title{
+  font-size: 2vw;
+  border-top: 5px dotted #BCBCBE;
+}
+
+.link-title>span{
+  font-size: 1.5vw;
+  color: #C55A5A;
+}
+
+.link-cook{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 4vh 0 10vh 0;
+  border-bottom: 5px dotted #BCBCBE;
+  padding-bottom: 4vh;
+  transition: all 0s ease 0s;
+}
+
+.link-deco{
+  text-decoration: none;
+  color: black;
+  background-color: #68A6C9;
+  border: 3px solid #BCBCBE;
+  font-size: 2vw;
+  border-radius: 4%;
+  padding: 8px;
+}
+
+.link-deco:hover {
+  border: none;
+  margin-left: 6px;
+}
+
 .another-page{
   display: flex;
   text-align: center;
   justify-content: flex-end;
+  margin-bottom: 7vh;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.caution{
+  display: flex;
+  text-align: flex-start;
+  justify-content: center;
+  font-size: 1.5vw;
+}
+
+.caution-text{
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.blue{
+  color: #4F63BE;
+}
+
+.red{
+  color: #C55A5A;
 }
 
 .page-menu{
@@ -55,7 +117,7 @@
 }
 
 .food-contents{
-  margin-top: 8vh;
+  margin-top: 5vh;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
 
@@ -67,9 +129,9 @@
 }
 
 .food-lists>.list {
-  width: 37vh;
+  width: 36vh;
   padding: 1vw;
-  background-color: #FFF;
+  background-color: white;
   border: 2px solid #BCBCBE;
   margin: 1%;
   border-radius: 10px;
@@ -96,7 +158,7 @@
 
 .food-info {
   color: black;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .food-name {
@@ -117,12 +179,11 @@
 }
 
 .food-deadline2{
-  color: aqua;
+  color: #C55A5A;
 }
 
 .food-deadline3{
-  color: red;
+  color: #4F63BE;
 }
-
 
 /* //商品一覧 */

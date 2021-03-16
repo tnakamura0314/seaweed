@@ -3,12 +3,13 @@
 <%# 商品一覧 %>
   <div class='food-title'>
     <div class='title'>
-    廃棄した食品一覧
-    </div>
-    <div class = 'new-food'>
-      <%= link_to '食品追加', new_food_path, class: "new-food1" %>
+    廃棄一覧
     </div>
   </div>
+  <ul class = "another-page">
+    <li><%= link_to '食品一覧', foods_path, class: "page-menu" %></li>
+    <li><%= link_to '消費一覧', food_consumptions_path, class: "page-menu2" %></li>
+  </ul>
 
   <div class='food-contents'>
     <ul class='food-lists'>

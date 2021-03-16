@@ -1,4 +1,6 @@
 class FoodsController < ApplicationController
+  before_action :authenticate_user!, only: [:index, :new, :create, :edit, :update, :destroy]
+  before_action :set_food, only: [:edit, :update, :destroy]
 
   def index
     @foods = Food.all
@@ -18,11 +20,9 @@ class FoodsController < ApplicationController
   end
 
   def edit
-    @food = Food.find(params[:id])
   end
 
   def update
-    @food = Food.find(params[:id])
     @food.update(food_params)
     if @food.status == 0 || @food.status == 1
       redirect_to foods_path
@@ -34,7 +34,6 @@ class FoodsController < ApplicationController
   end
 
   def destroy
-    @food = Food.find(params[:id])
     @food.destroy
     redirect_to root_path
   end
@@ -43,5 +42,9 @@ class FoodsController < ApplicationController
 
   def food_params
     params.require(:food).permit(:image, :name, :number, :quantity_id, :deadline, :status).merge(user_id: current_user.id)
+  end
+
+  def set_food
+    @food = Food.find(params[:id])
   end
 end

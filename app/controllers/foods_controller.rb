@@ -38,6 +38,11 @@ class FoodsController < ApplicationController
     redirect_to root_path
   end
 
+  # def search
+  #   selection = params[:keyword]
+  #   @foods = Food.sort(selection)
+  # end
+
   private
 
   def food_params

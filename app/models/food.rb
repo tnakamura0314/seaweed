@@ -15,4 +15,15 @@ class Food < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :quantity
 
+  # def self.sort(selection)
+  #   case selection
+  #   when 'old'
+  #     return all.order(deadline: :ASC)
+  #   when 'new'
+  #     return all.order(deadline: :DESC)
+  #   when 'name'
+  #     return all.order(name: :ASC)
+  #   end
+  # end
+
 end

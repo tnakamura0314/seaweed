@@ -9,10 +9,9 @@
 .title {
   background-color: #FFF;
   text-align: center;
-  padding: 10vh 0 0 0;
   font-size: 5vw;
   width:27vw;
-  margin-bottom: 10vh;
+  margin: 5vh 0;
   border-bottom:5px solid #88B6A9;
 }
 
@@ -36,7 +35,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 4vh 0 10vh 0;
+  margin-top: 4vh;
   border-bottom: 5px dotted #BCBCBE;
   padding-bottom: 4vh;
   transition: all 0s ease 0s;
@@ -61,7 +60,7 @@
   display: flex;
   text-align: center;
   justify-content: flex-end;
-  margin-bottom: 7vh;
+  margin: 4vh 0 6vh 0;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
 
@@ -129,7 +128,8 @@
 }
 
 .food-lists>.list {
-  width: 36vh;
+  width: 31vw;
+  height: auto;
   padding: 1vw;
   background-color: white;
   border: 2px solid #BCBCBE;
@@ -148,26 +148,32 @@
 
 .food-img-content {
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  padding-top: 70%;
 }
 
 .food-img {
-  width: 33vh;
-  height: 33vh;
-  border-radius: 30px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .food-info {
+  margin-top: 2vh;
+  width: 100%;
   color: black;
-  font-size: 16px;
+  font-size: 1.5vw;
 }
 
 .food-name {
   display: flex;
 
-}
-
-.food-name2{
-  color: green;
 }
 
 .food-quantity {

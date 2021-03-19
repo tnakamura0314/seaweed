@@ -3,12 +3,13 @@
 /* ヘッダー */
 
 .foods-sell-contents {
+  height: 100%;
   background-color: #f5f5f5;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-width: 500px;
+  min-width: 30vw;
 }
 
 .foods-sell-header {
@@ -16,65 +17,49 @@
   text-align: center;
 }
 
+/* /ヘッダー */
+
 .foods-sell-main {
   background-color: #FFF;
-  width: 70vw;
-  min-width: 450px;
-  padding: 10vh 15vw;
+  width: 60vw;
 }
 
 .foods-sell-title {
-  font-size: 24px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* /ヘッダー */
-
-/* 共通 */
-
-.indispensable {
-  background: #88B6A9;
-  margin-left: 8px;
-  padding: 1.5px;
-  width: 30px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 13px;
-  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+.foods-sell-title1 {
+  width: 20vw;
+  font-size: 2.7vw;
+  border-bottom: 4px solid #88B6A9;
 }
-
-.weight-text {
-  font-size: 17px;
-}
-
-/* /共通 */
-
-
 
 .img-upload{
   display: flex;
   align-items: center;
-  margin-top : 50px;
+  margin-top : 9vh;
 }
 
 .click-upload{
-  margin: 20px 0;
+  margin: 2vh 0;
 }
 
 .click-upload>p{
-  margin-bottom: 5px;
+  margin-bottom: 1vh;
 }
 
 .foods-name{
   display: flex;
   align-items: center;
-  margin: 50px 0 20px 0;
+  margin: 5vh 0 2vh 0;
 }
 
 .quantity-text{
   display: flex;
   align-items: center;
-  margin: 50px 0 20px 0;
+  margin: 5vh 0 2vh 0;
 }
 
 .quantity-form{
@@ -90,18 +75,18 @@
 }
 
 .foods-text{
-  margin-right: 15px;
+  margin-right: 1vw;
 }
 
 .foods-deadline{
   display: flex;
   align-items: center;
-  margin: 50px 0 20px 0;
+  margin: 5vh 0 2vh 0;
 }
 
 .input-deadline-wrap{
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 8vh;
 }
 
 /* 下部ボタン */
@@ -117,17 +102,20 @@
   color: black;
   width: 100%;
   height: 50px;
-  font-size: 14px;
-  margin-bottom: 4vh;
+  font-size: 1.7vw;
+  margin-bottom: 5vh;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .back-btn {
   background: #BCBCBE;
   border: 1px solid #BCBCBE;
   color: black;
-  padding: 15px 35%;
+  padding: 16px 35%;
   text-decoration: none;
+  font-size: 1.7vw;
+  border-radius: 4px;
 }
 
 /* /下部ボタン */

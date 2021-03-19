@@ -10,15 +10,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 60px;
-	height: 16%;
-	width: 100%;
+	margin-top: 10vh;
+	width: 100vw;
 }
 
 .gallery-text {
 	font-size: 3.7vw;
 	width: 35vw;
-	padding-bottom: 10px;
+	text-align: center;
+	padding-bottom: 1vh;
 	border-bottom:5px solid #88B6A9;
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
@@ -27,8 +27,8 @@
   display: flex;
   align-items: center;
 	justify-content: space-around;
-	width: 100%;
-	padding: 60px 0;
+	width: 100vw;
+	padding-top: 8vh;
 }
 
 .gallery-animation{
@@ -69,27 +69,19 @@
 	border-radius: 5%;
 }
 
-.text{
-	font-size: 2vw;
-	width: 70%;
-	margin: 0 auto;
-	padding: 40px 0 60px 0;
-	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-}
-
 .product{
   display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 60px;
-	height: 16%;
-	width: 100%;
+	width: 100vw;
+	margin-top: 10vh;
 }
 
 .product-name {
 	font-size: 3.7vw;
-	width: 31vw;
-	padding-bottom: 10px;
+	width: 35vw;
+	text-align: center;
+	padding-bottom: 1vh;
 	border-bottom:5px solid #88B6A9;
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
@@ -99,7 +91,7 @@
 	align-items: center;
 	justify-content: space-around;
 	margin: 0 auto;
-	padding: 15vh 0 60px 0;
+	padding-top: 8vh;
 }
 
 .product-text{
@@ -135,15 +127,15 @@
   display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 60px;
-	height: 16%;
-	width: 100%;
+	width: 100vw;
+	margin-top: 10vh;
 }
 
 .message-name {
 	font-size: 3.7vw;
-	width: 34vw;
-	padding-bottom: 10px;
+	width: 35vw;
+	text-align: center;
+	padding-bottom: 1vh;
 	border-bottom:5px solid #88B6A9;
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
@@ -153,7 +145,7 @@
 	align-items: center;
 	justify-content: space-around;
 	margin: 0 auto;
-	padding: 15vh 0 60px 0;
+	padding-top: 8vh;
 }
 
 .message-text1{
@@ -199,15 +191,42 @@
   display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-top: 60px;
-	height: 16%;
-	width: 100%;
+	width: 100vw;
+	margin-top: 10vh;
 }
 
 .news-name {
 	font-size: 3.7vw;
-	width: 19vw;
-	padding-bottom: 10px;
+	width: 42vw;
+	text-align: center;
+	padding-bottom: 1vh;
 	border-bottom:5px solid #88B6A9;
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.all-news-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.news-text{
+	border-top: 5px dotted #BCBCBE;
+	border-bottom: 5px dotted #BCBCBE;
+	width: 80vw;
+	padding: 2vh 0;
+	margin: 8vh 0;
+	font-size: 1.7vw;
+}
+
+.news-text1{
+  border-bottom: 1px solid #BCBCBE;
+	padding-bottom: 0.5vh;
+}
+
+.news-text2{
+  border-bottom: 1px solid #BCBCBE;
+	padding:0.5vh 0 0.5vh 0;
 }

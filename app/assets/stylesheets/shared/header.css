@@ -36,7 +36,7 @@
 .lists-left-product{
 
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
   position: relative;
   margin-right: 4vw;
   text-decoration: none;
@@ -84,7 +84,7 @@
 
 .lists-left-news{
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
   position: relative;
   text-decoration: none;
   color: black;
@@ -118,7 +118,7 @@
 	text-decoration: none;
 	color: black;
 	margin-right: 3vw;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
   position: relative;
 }
 
@@ -141,7 +141,7 @@
   text-decoration: none;
   color: black;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
 }
 
 .logout::after {
@@ -164,7 +164,7 @@
   color: black;
 	margin-right: 3vw;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
 }
 
 .login::after {
@@ -186,7 +186,7 @@
   text-decoration: none;
   color: black;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 1vh;
 }
 
 .sign-up::after {

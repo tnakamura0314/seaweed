@@ -5,7 +5,9 @@
   </header>
 
   <div class="foods-sell-main">
-    <h2 class="foods-sell-title">食品情報を登録</h2>
+    <div class = "foods-sell-title">
+      <h2 class="foods-sell-title1">食品情報を登録</h2>
+    </div>
     <%= form_with model: @food, url: foods_path, local: true do |f| %>
 
       <%= render 'shared/error_messages', model: f.object %>

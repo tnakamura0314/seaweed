@@ -1,17 +1,20 @@
-.login-btn {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 50px;
+
+.login-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.login-red-btn {
-  width: 100%;
+.login-btn1{
+  width: 25vw;
+  margin: 6vh 0;
   background: #88B6A9;
   border: 1px solid #88B6A9;
   color: black;
-  line-height: 48px;
+  line-height: 5vh;
   font-size: 14px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .login-flash-message {

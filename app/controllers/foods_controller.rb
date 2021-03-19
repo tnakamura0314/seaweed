@@ -24,18 +24,12 @@ class FoodsController < ApplicationController
 
   def update
     @food.update(food_params)
-    if @food.status == 0 || @food.status == 1
-      redirect_to foods_path
-    elsif @food.status == 2
-      redirect_to food_consumptions_path
-    else
-      redirect_to food_losses_path
-    end
+    redirect_to foods_path
   end
 
   def destroy
     @food.destroy
-    redirect_to root_path
+    redirect_to foods_path
   end
 
   # def search

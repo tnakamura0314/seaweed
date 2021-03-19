@@ -3,7 +3,7 @@ class FoodsController < ApplicationController
   before_action :set_food, only: [:edit, :update, :destroy]
 
   def index
-    @foods = Food.all
+    @foods = Food.order("deadline ASC")
   end
 
   def new

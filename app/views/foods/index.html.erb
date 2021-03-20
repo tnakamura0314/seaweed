@@ -24,7 +24,7 @@
       <li><%= link_to '消費一覧', food_consumptions_path, class: "page-menu" %></li>
       <li><%= link_to '廃棄一覧', food_losses_path, class: "page-menu2" %></li>
     </ul>
-  <%# </div> %>
+  </div>
   <div class = "caution">
     <div calss = "caution-text">
       ※賞味/消費期限については、<span class = "blue">【青色：期限が切れる3日以内】</span>/<span class = "red">【赤色：期限切れ】</span>で表示されます。<br>
@@ -35,7 +35,7 @@
   <div class='food-contents'>
     <ul class='food-lists'>
       <% @foods.each do |food|%>
-        <% if food.user_id == current_user.id && (food.status == 0 || food.status == 1) %>
+        <% if food.user_id == current_user.id && food.status == 0 %>
           <li class='list'>
             <%= link_to edit_food_path(food.id), class: 'food-link' do %>
               <div class='food-img-content'>

@@ -1,5 +1,5 @@
 .footer-main{
-  padding-top: 1vh;
+  padding-top: 0.5vh;
   width:100vw;
   background-color: #88B6A9;
   display: flex;
@@ -18,7 +18,7 @@
 }
 
 .footer-menu1{
-  margin-top: 1.5vh;
+  margin-top: 1vh;
   width:75vw;
   display: flex;
   align-items: center;
@@ -144,6 +144,6 @@
 .copylight{
   text-align: center;
   font-size: 0.3vw;
-  padding: 0.5vh 0;
+  padding-bottom: 0.5vh;
   color: black;
 }

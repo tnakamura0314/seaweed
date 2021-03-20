@@ -67,15 +67,15 @@
         </div>
         <div class = "status-radio">
           <div class="radio-inline">
-            <%= f.radio_button :status, 1, checked: "checked" %>
+            <%= f.radio_button :status, 0, checked: "checked" %>
             <%= f.label :status, "食品一覧", class: "food_type_label" %>
           </div>
           <div class="radio-inline">
-            <%= f.radio_button :status, 2 %>
+            <%= f.radio_button :status, 1 %>
             <%= f.label :status, "消費一覧", class: "food_type_label" %>
           </div>
           <div class="radio-inline">
-            <%= f.radio_button :status, 3 %>
+            <%= f.radio_button :status, 2 %>
             <%= f.label :status, "廃棄一覧", class: "food_type_label" %>
           </div>
         </div>

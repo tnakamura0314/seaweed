@@ -5,7 +5,4 @@ Rails.application.routes.draw do
   resources :foods, only: [:index, :new, :create, :edit ,:update, :destroy]
   resources :food_consumptions, only: [:index]
   resources :food_losses, only: [:index]
-
-  get 'search' => 'foods#search'
-
 end

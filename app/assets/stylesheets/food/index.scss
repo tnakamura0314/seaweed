@@ -182,7 +182,16 @@
 
 .food-name {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+.food-name1 {
+  font-size: 1.7vw;
+}
+
+.food-name2 {
+  font-size: 2vw;
 }
 
 .food-quantity {

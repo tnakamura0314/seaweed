@@ -1,4 +1,13 @@
-/* 商品一覧 */
+.food{
+  width: 100vw;
+  height: auto;
+}
+
+.food-consumption-loss{
+  width:100vw;
+  height: auto;
+}
+
 .food-title{
   display: flex;
   align-items: center;
@@ -191,5 +200,3 @@
 .food-deadline3{
   color: #4F63BE;
 }
-
-/* //商品一覧 */

@@ -1,6 +1,6 @@
 <%= render "shared/header" %>
 
-<%# 商品一覧 %>
+<div class = "food">
   <div class='food-title'>
     <div class='title'>
     食品一覧
@@ -31,7 +31,6 @@
       ※食品を消費/廃棄したら、該当の食品をクリックし、編集ページで消費/廃棄にチェックを入れてください。
     </div>
   </div>
-
 
   <div class='food-contents'>
     <ul class='food-lists'>
@@ -88,5 +87,8 @@
       <% end %>
     </ul>
   </div>
-  <%= render "shared/add_to_btn" %>
-<%# /商品一覧 %>
+</div>
+
+<%= render "shared/add_to_btn" %>
+
+<%= render "shared/footer" %>

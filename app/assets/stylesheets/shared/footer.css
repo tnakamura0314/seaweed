@@ -1,0 +1,149 @@
+.footer-main{
+  padding-top: 1vh;
+  width:100vw;
+  background-color: #88B6A9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.footer-logo{
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo1{
+  width: 15vw;  
+}
+
+.footer-menu1{
+  margin-top: 1.5vh;
+  width:75vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4vw;
+}
+
+.how-to-use{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.how-to-use::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.how-to-use:hover::after {
+  width: 100%;
+}
+
+.help{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.help::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.help:hover::after {
+  width: 100%;
+}
+
+.contact-us{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.contact-us::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.contact-us:hover::after {
+  width: 100%;
+}
+
+.terms-of-service{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.terms-of-service::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.terms-of-service:hover::after {
+  width: 100%;
+}
+
+.privacy{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.privacy::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.privacy:hover::after {
+  width: 100%;
+}
+
+.footer-bottom{
+  width: 100vw;
+  background-color: #88B6A9;
+}
+
+.copylight{
+  text-align: center;
+  font-size: 0.3vw;
+  padding: 0.5vh 0;
+  color: black;
+}

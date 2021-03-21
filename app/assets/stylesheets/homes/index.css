@@ -230,3 +230,152 @@
   border-bottom: 1px solid #BCBCBE;
 	padding:0.5vh 0 0.5vh 0;
 }
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+	.top-image {
+		height: 50vh;
+	}
+	
+	.gallery{
+		margin-top: 5vh;
+	}
+	
+	.gallery-text {
+		font-size: 6vw;
+		width: 55vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.gallery-image{
+		padding-top: 6vh;
+
+	}
+	
+	.gallery-animation{
+		border: 5px solid #BCBCBE;
+		margin-bottom: 4vh;
+	}
+	
+	.food-image{
+		width: 30vw;
+	}
+	
+	.image-text{
+		font-size: 5vw;
+		margin-bottom: 1vh;
+	}
+	
+	.consumption-image{
+		width: 30vw;
+	}
+	
+	.loss-image{
+		width: 30vw;
+	}
+	
+	.product{
+		margin-top: 5vh;
+	}
+	
+	.product-name {
+		font-size: 6vw;
+		width: 50vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.product-main{
+		padding-top: 5vh;
+	}
+	
+	.product-text{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin: 3vh 0;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.product-text>span{
+		font-size: 2.7vw;
+	}
+	
+	.product-text>p{
+		font-size: 2.3vw;
+	}
+	
+	.deco-image{
+		border-radius: 50%;
+		width: 40vw;
+	}
+	
+	.deco-image:hover{
+		transform: scale(1.05, 1.05);
+	}
+	
+	.message{
+		margin-top: 8vh;
+	}
+	
+	.message-name {
+		font-size: 6vw;
+		width: 55vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.message-main{
+		padding-top: 5vh;
+	}
+	
+	.message-text1{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin: 3vh 0;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text1>span{
+		font-size: 2.7vw;
+	}
+	
+	.message-text2{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin-bottom: 3vh;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text2>span{
+		font-size: 2.7vw;
+	}
+	
+	.message-text3{
+		font-size: 2.5vw;
+		width: 50vw;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text3>span{
+		font-size: 2.7vw;
+	}
+	
+	.news{
+		margin-top: 8vh;
+	}
+	
+	.news-name {
+		font-size: 6vw;
+		width: 67vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.news-text{
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+		width: 85vw;
+		font-size: 2.5vw;
+	}
+}

@@ -56,6 +56,10 @@
   margin: 5vh 0 2vh 0;
 }
 
+.weight-text {
+  font-size: 17px;
+}
+
 .quantity-text{
   display: flex;
   align-items: center;
@@ -151,3 +155,74 @@
 }
 
 /* /フッター */
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  /* ヘッダー */
+
+  .foods-sell-header {
+    width: 30vw;
+  }
+
+  /* /ヘッダー */
+
+  .foods-sell-main {
+    width: 80vw;
+  }
+
+  .foods-sell-title1 {
+    width: 40vw;
+    font-size: 5vw;
+    border-bottom: 5px solid #88B6A9;
+  }
+
+  .img-upload{
+    margin-top : 7vh;
+  }
+
+  .click-upload{
+    margin: 1.5vh 0;
+  }
+
+  .weight-text {
+    font-size: 3vw;
+  }
+
+  .input-deadline-wrap{
+    width: 70vw;
+    font-size: 3vw;
+  }
+
+  /* 下部ボタン */
+
+  .sell-btn {
+    width: 95%;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+  }
+
+  .back-btn {
+    padding: 16px 32%;
+    font-size: 3vw;
+  }
+
+  /* /下部ボタン */
+
+
+  /* フッター */
+
+  .foods-sell-footer {
+  padding: 0.5vh 0;
+}
+
+.menu>li>a {
+  color: black;
+  font-size: 2.5vw;
+}
+
+.inc {
+  font-size: 2vw;
+}
+
+/* /フッター */
+}

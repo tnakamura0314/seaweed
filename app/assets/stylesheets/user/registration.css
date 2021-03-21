@@ -5,7 +5,6 @@
   justify-content: center;
 }
 
-/* form-wrapは商品購入画面でも使用しています */
 .form-wrap {
   width: 50vw;
   background-color: white;
@@ -135,4 +134,71 @@
   text-align: center;
   cursor: pointer;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+@media (max-width: 599px) {  
+  .form-wrap {
+    width: 80vw;
+  }
+  
+  .form-header {
+    font-size: 6vw;
+  }
+  
+  .form-header-text {
+    width:28vw;
+    border-bottom: 5px solid #88B6A9;
+  }
+  
+  .form-group {
+    width: 50vw;
+  }
+  
+  .form-text {
+    font-size: 3vw;
+  }
+  
+  .indispensable {
+    margin-left: 2vw;
+    font-size: 2.1vw;
+  }
+  
+  .input-default {
+    font-size: 2.8vw;
+  }
+  
+  .info-text {
+    font-size: 2.5vw;
+    margin-top: 0.5vh;
+  }
+  
+  .input-birth-wrap {
+    width: 50vw;
+  }
+  
+  .input-birth-wrap select {
+    width:12vw;
+    padding: 10px 0;
+    font-size: 3vw;
+  }
+  
+  .input-birth-wrap p {
+    line-height: 6vh;
+    font-size: 3vw;
+    padding-top: 12px;
+  }
+  
+  .form-bottom-text {
+    font-size: 3vw;
+  }
+  
+  .form-bottom-text>span {
+    font-size: 3vw;
+  }
+  
+  .register-btn1 {
+    width:47vw;
+    line-height: 5.4vh;
+    font-size: 4.5vw;
+  }
 }

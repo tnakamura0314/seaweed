@@ -1,3 +1,9 @@
+.form-header-text1 {
+  width:19vw;
+  text-align: center;
+  border-bottom: 4px solid #88B6A9;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
 
 .login-btn{
   display: flex;
@@ -20,4 +26,18 @@
 .login-flash-message {
   text-align: center;
   color: #C55A5A;
+}
+
+@media (max-width: 599px) {
+  .form-header-text1 {
+    width:34vw;
+    font-size: 5vw;
+    border-bottom: 5px solid #88B6A9;
+  }
+
+  .login-btn1{
+    width: 43vw;
+    margin: 6vh 0;
+    font-size: 3vw;
+  }
 }

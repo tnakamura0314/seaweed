@@ -28,3 +28,13 @@
 .second-footer-logo1 {
   width: 16vw;
 }
+
+@media (max-width: 599px) {
+  .second-footer-text {
+    font-size: 2vw;
+  }
+  
+  .second-footer-logo1 {
+    width: 30vw;
+  }  
+}

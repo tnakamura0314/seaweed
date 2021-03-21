@@ -10,3 +10,9 @@
 .second-logo {
   width: 16vw;
 }
+
+@media (max-width: 599px) {
+  .second-logo {
+    width: 30vw;
+  }
+}

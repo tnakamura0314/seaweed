@@ -11,7 +11,8 @@
 	justify-content: space-between;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
   background-color: #88B6A9;
-  
+  position: fixed;
+  z-index: 9999;
 }
 
 .seaweed-logo{
@@ -34,7 +35,6 @@
 }
 
 .lists-left-product{
-
   cursor: pointer;
   padding-bottom: 1vh;
   position: relative;
@@ -202,4 +202,83 @@
 
 .sign-up:hover::after {
   width: 100%;
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+	.top-page-header {
+    height: 50px;
+    width: 100%;
+  }
+
+  .top-left {
+    width: auto;
+  }
+  
+  .lists-left-product{
+    padding-bottom: 5px;
+    margin: 0 20px;
+    font-size: 2vw;
+  }
+  
+  .lists-left-product::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .lists-left-message{
+    padding-bottom: 5px;
+    margin-right: 20px;
+    font-size: 2vw;
+  }
+  
+  .lists-left-message::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .lists-left-news{
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .lists-left-news::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .user-nickname{
+    margin-right: 18px;
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .user-nickname::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .logout {
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .logout::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .login {
+    margin-right: 18px;
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .login::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .sign-up {
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .sign-up::after {
+    border-bottom: 2px solid black;
+  }
 }

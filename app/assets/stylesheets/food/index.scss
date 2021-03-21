@@ -3,11 +3,6 @@
   height: auto;
 }
 
-.food-consumption-loss{
-  width:100vw;
-  height: auto;
-}
-
 .food-title{
   display: flex;
   align-items: center;
@@ -20,7 +15,7 @@
   text-align: center;
   font-size: 5vw;
   width:27vw;
-  margin: 5vh 0;
+  margin: 10vh 0 5vh 0;
   border-bottom:5px solid #88B6A9;
 }
 
@@ -208,4 +203,99 @@
 
 .food-deadline3{
   color: #4F63BE;
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  
+  .title {
+    font-size: 8vw;
+    width:34vw;
+  }
+  
+  .link{
+    text-align: center;
+    width:80vw;
+    margin: 0 auto;
+  }
+  
+  .link-title{
+    font-size: 3.5vw;
+    border-top: 6px dotted #BCBCBE;
+  }
+  
+  .link-title>span{
+    font-size: 3vw;
+  }
+  
+  .link-cook{
+    margin-top: 4vh;
+    border-bottom: 6px dotted #BCBCBE;
+  }
+  
+  .link-deco{
+    border: 4px solid #BCBCBE;
+    font-size: 3vw;
+  }
+  
+  .another-page{
+    margin-top: 6vh;
+    justify-content: center;
+  }
+  
+  .caution{
+    font-size: 2vw;
+  }
+
+  .page-menu{
+    border: 5px solid #BCBCBE;
+    font-size: 5vw;
+    padding: 1vh 1.5vw;
+    margin:0 15vw 0 6vw;
+  }
+
+  .page-menu:hover {
+    margin-left: calc(5vw + 16px);
+  }
+  
+  .page-menu2{
+    border: 5px solid #BCBCBE;
+    font-size: 5vw;
+    padding: 1vh 1.5vw;
+  }
+  
+  .page-menu2:hover {
+    margin-left: calc(5vw + 10px);
+  }
+  
+  .food-contents{
+    margin-top: 6vh;
+  }
+  
+
+
+
+  .food-lists {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .food-lists>.list {
+    width: 80vw;
+    border: 3px solid #BCBCBE;
+    margin: 2%;
+  }
+  
+  .food-info {
+    font-size: 4vw;
+  }
+  
+  .food-name1 {
+    font-size: 4vw;
+  }
+  
+  .food-name2 {
+    font-size: 4vw;
+  }
 }

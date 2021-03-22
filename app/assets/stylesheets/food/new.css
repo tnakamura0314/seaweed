@@ -3,12 +3,13 @@
 /* ヘッダー */
 
 .foods-sell-contents {
+  height: 100%;
   background-color: #f5f5f5;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-width: 500px;
+  min-width: 30vw;
 }
 
 .foods-sell-header {
@@ -16,65 +17,53 @@
   text-align: center;
 }
 
+/* /ヘッダー */
+
 .foods-sell-main {
   background-color: #FFF;
-  width: 70vw;
-  min-width: 450px;
-  padding: 10vh 15vw;
+  width: 60vw;
 }
 
 .foods-sell-title {
-  font-size: 24px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* /ヘッダー */
+.foods-sell-title1 {
+  width: 20vw;
+  font-size: 2.7vw;
+  border-bottom: 4px solid #88B6A9;
+}
 
-/* 共通 */
+.img-upload{
+  display: flex;
+  align-items: center;
+  margin-top : 9vh;
+}
 
-.indispensable {
-  background: green;
-  margin-left: 8px;
-  padding: 1.5px;
-  width: 30px;
-  border-radius: 4px;
-  color: #fff;
-  font-size: 13px;
-  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+.click-upload{
+  margin: 2vh 0;
+}
+
+.click-upload>p{
+  margin-bottom: 1vh;
+}
+
+.foods-name{
+  display: flex;
+  align-items: center;
+  margin: 5vh 0 2vh 0;
 }
 
 .weight-text {
   font-size: 17px;
 }
 
-/* /共通 */
-
-
-
-.img-upload{
-  display: flex;
-  align-items: center;
-  margin-top : 50px;
-}
-
-.click-upload{
-  margin: 20px 0;
-}
-
-.click-upload>p{
-  margin-bottom: 5px;
-}
-
-.foods-name{
-  display: flex;
-  align-items: center;
-  margin: 50px 0 20px 0;
-}
-
 .quantity-text{
   display: flex;
   align-items: center;
-  margin: 50px 0 20px 0;
+  margin: 5vh 0 2vh 0;
 }
 
 .quantity-form{
@@ -90,18 +79,18 @@
 }
 
 .foods-text{
-  margin-right: 15px;
+  margin-right: 1vw;
 }
 
 .foods-deadline{
   display: flex;
   align-items: center;
-  margin: 50px 0 20px 0;
+  margin: 5vh 0 2vh 0;
 }
 
 .input-deadline-wrap{
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom: 8vh;
 }
 
 /* 下部ボタン */
@@ -112,22 +101,25 @@
 }
 
 .sell-btn {
-  background: green;
-  border: 1px solid green;
-  color: #fff;
+  background: #88B6A9;
+  border: 1px solid #88B6A9;
+  color: black;
   width: 100%;
   height: 50px;
-  font-size: 14px;
-  margin-bottom: 4vh;
+  font-size: 1.7vw;
+  margin-bottom: 5vh;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .back-btn {
-  background: #aaa;
-  border: 1px solid #aaa;
-  color: #fff;
-  padding: 15px 35%;
+  background: #BCBCBE;
+  border: 1px solid #BCBCBE;
+  color: black;
+  padding: 16px 35%;
   text-decoration: none;
+  font-size: 1.7vw;
+  border-radius: 4px;
 }
 
 /* /下部ボタン */
@@ -163,3 +155,74 @@
 }
 
 /* /フッター */
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  /* ヘッダー */
+
+  .foods-sell-header {
+    width: 30vw;
+  }
+
+  /* /ヘッダー */
+
+  .foods-sell-main {
+    width: 80vw;
+  }
+
+  .foods-sell-title1 {
+    width: 40vw;
+    font-size: 5vw;
+    border-bottom: 5px solid #88B6A9;
+  }
+
+  .img-upload{
+    margin-top : 7vh;
+  }
+
+  .click-upload{
+    margin: 1.5vh 0;
+  }
+
+  .weight-text {
+    font-size: 3vw;
+  }
+
+  .input-deadline-wrap{
+    width: 70vw;
+    font-size: 3vw;
+  }
+
+  /* 下部ボタン */
+
+  .sell-btn {
+    width: 95%;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+  }
+
+  .back-btn {
+    padding: 16px 32%;
+    font-size: 3vw;
+  }
+
+  /* /下部ボタン */
+
+
+  /* フッター */
+
+  .foods-sell-footer {
+  padding: 0.5vh 0;
+}
+
+.menu>li>a {
+  color: black;
+  font-size: 2.5vw;
+}
+
+.inc {
+  font-size: 2vw;
+}
+
+/* /フッター */
+}

@@ -1,40 +1,40 @@
-.second-footer {
+.third-footer {
   width: 100vw;
-  height: 15vh;
+  height: 50vh;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
 }
 
-.second-footer-text-wrap {
+.third-footer-text-wrap {
   margin: 2.5vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.second-footer-text {
+.third-footer-text {
   color: #333;
   font-size: 1.2vw;
-  margin: 0 2vw;
+  margin: 2.5vh 2vw 0;
 }
 
-.second-footer-logo {
+.third-footer-logo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.second-footer-logo1 {
+.third-footer-logo1 {
   width: 16vw;
 }
 
 @media (max-width: 599px) {
-  .second-footer-text {
+  .third-footer-text {
     font-size: 2vw;
   }
-  
-  .second-footer-logo1 {
+
+  .third-footer-logo1 {
     width: 30vw;
-  }  
+  }
 }

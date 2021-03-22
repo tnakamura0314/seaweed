@@ -1,43 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
 .top-page-header {
   width: 100vw;
-  padding: 1vh 5vw;
+  height:8vh;
+  padding: 0.7vh 5vw;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-  background-color: cadetblue;
+  background-color: #88B6A9;
+  position: fixed;
+  z-index: 9999;
 }
 
 .seaweed-logo{
-	width: 10vw;
+	width: 15vw;
 }
+
+.top-left {
+  display: flex;
+  list-style: none;
+	font-size: 1.4vw;
+  padding: 1.3vh 0;
+  width:65vw;
+}
+
+.lists-left{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.lists-left-product{
+  cursor: pointer;
+  padding-bottom: 1vh;
+  position: relative;
+  margin-right: 4vw;
+  text-decoration: none;
+  color: black;
+}
+
+.lists-left-product::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.lists-left-product:hover::after {
+  width: 100%;
+}
+
+.lists-left-message{
+  margin-right: 4vw;
+  cursor: pointer;
+  padding-bottom: 10px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.lists-left-message::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.lists-left-message:hover::after {
+  width: 100%;
+}
+
+.lists-left-news{
+  cursor: pointer;
+  padding-bottom: 1vh;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.lists-left-news::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.3s ease 0s;
+}
+
+.lists-left-news:hover::after {
+  width: 100%;
+}
+
 
 .lists-right {
   display: flex;
   list-style: none;
-	font-size: 18px;
-  padding: 1vh 0;
-	
+	font-size: 1.9vw;
+  padding: 1.3vh 0;
+  width: 20vw
 }
 
 .user-nickname{
 	text-decoration: none;
 	color: black;
 	margin-right: 3vw;
+  padding-bottom: 1vh;
+  position: relative;
+}
+
+.user-nickname::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.user-nickname:hover::after {
+  width: 100%;
 }
 
 .logout {
   text-decoration: none;
   color: black;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.logout::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.logout:hover::after {
+  width: 100%;
 }
 
 .login {
   text-decoration: none;
   color: black;
 	margin-right: 3vw;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.login::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.login:hover::after {
+  width: 100%;
 }
 
 .sign-up {
   text-decoration: none;
   color: black;
+  position: relative;
+  padding-bottom: 1vh;
+}
+
+.sign-up::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  border-bottom: 0.4vh solid black;
+  transition: all 0.5s ease 0.2s;
+}
+
+.sign-up:hover::after {
+  width: 100%;
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+	.top-page-header {
+    height: 50px;
+    width: 100%;
+  }
+
+  .top-left {
+    width: auto;
+  }
+  
+  .lists-left-product{
+    padding-bottom: 5px;
+    margin: 0 20px;
+    font-size: 2vw;
+  }
+  
+  .lists-left-product::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .lists-left-message{
+    padding-bottom: 5px;
+    margin-right: 20px;
+    font-size: 2vw;
+  }
+  
+  .lists-left-message::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .lists-left-news{
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .lists-left-news::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .user-nickname{
+    margin-right: 18px;
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .user-nickname::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .logout {
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .logout::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .login {
+    margin-right: 18px;
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .login::after {
+    border-bottom: 2px solid black;
+  }
+  
+  .sign-up {
+    padding-bottom: 5px;
+    font-size: 2vw;
+  }
+  
+  .sign-up::after {
+    border-bottom: 2px solid black;
+  }
 }

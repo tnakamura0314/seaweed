@@ -1,21 +1,5 @@
 /* border-bottom: 1px solid #eee; */
 
-/* ヘッダー */
-
-.foods-sell-contents {
-  background-color: #f5f5f5;
-  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  min-width: 500px;
-}
-
-.foods-sell-header {
-  padding: 5vh 0;
-  text-align: center;
-}
-
 .foods-sell-main {
   background-color: #FFF;
   width: 70vw;
@@ -28,12 +12,10 @@
   text-align: center;
 }
 
-/* /ヘッダー */
-
 /* 共通 */
 
 .indispensable {
-  background: green;
+  background: #88B6A9;
   margin-left: 8px;
   padding: 1.5px;
   width: 30px;
@@ -130,66 +112,63 @@
 }
 
 .edit-btn {
-  background: green;
-  border: 1px solid green;
-  color: #fff;
-  padding: 15px 35%;
-  font-size: 14px;
+  background: #88B6A9;
+  border: 1px solid #88B6A9;
+  color: black;
+  width: 100%;
+  height: 50px;
+  font-size: 1.7vw;
   margin-bottom: 4vh;
   cursor: pointer;
   border-radius: 4px;
 }
 
 .destroy-btn {
-  background: red;
-  border: 1px solid red;
-  color: #fff;
+  background: #C55A5A;
+  border: 1px solid #C55A5A;
+  color: black;
+  padding: 12px 32%;
+  text-decoration: none;
+  font-size: 1.7vw;
+  border-radius: 4px;
   margin-bottom: 2vh;
-  padding: 15px 29%;
-  text-decoration: none;
-  border-radius: 4px;
 }
 
-.back-btn1{
-  background: gray;
-  border: 1px solid gray;
-  color: #fff;
-  padding: 15px 31%;
+.back-btn1 {
+  background: #BCBCBE;
+  border: 1px solid #BCBCBE;
+  color: black;
+  padding: 12px 35%;
   text-decoration: none;
-  cursor: pointer;
+  font-size: 1.7vw;
   border-radius: 4px;
 }
-
 /* /下部ボタン */
 
-
-/* フッター */
-
-.foods-sell-footer {
-  background-color: #f5f5f5;
-  width: 60vw;
-  padding: 3ch 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 599px) {
+  .food_type_label{
+    font-size: 2.9vw;
+    margin-right: 10px;
+  }
+  
+  .foods-status{
+    margin-bottom: 80px;
+  }
+  
+  /* 下部ボタン */
+  
+  .edit-btn {
+    font-size: 3vw;
+    margin-bottom: 3.5vh;
+  }
+  
+  .destroy-btn {
+    font-size: 2.8vw;
+    margin-bottom: 2.5vh;
+  }
+  
+  .back-btn1 {
+    font-size: 2.8vw;
+  }
+  /* /下部ボタン */
 }
-
-
-.foods-sell-footer>.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 3vh 0;
-}
-
-.menu>li>a {
-  color: black;
-  font-size: 12px;
-  margin: 2vw;
-}
-
-.inc {
-  font-size: 13px;
-}
-
-/* /フッター */

@@ -4,13 +4,22 @@
 
 .top-image {
   width:100vw;
-	padding-bottom: 40px;
 }
 
-span {
-	font-size: 35px;
+.gallery{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10vh;
+	width: 100vw;
+}
+
+.gallery-text {
+	font-size: 3.7vw;
+	width: 35vw;
 	text-align: center;
-	display: block;
+	padding-bottom: 1vh;
+	border-bottom:5px solid #88B6A9;
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
 
@@ -18,10 +27,21 @@ span {
   display: flex;
   align-items: center;
 	justify-content: space-around;
-	width: 100%;
-	padding: 60px 0;
-	
+	width: 100vw;
+	padding-top: 8vh;
+}
 
+.gallery-animation{
+	border: 4px solid #BCBCBE;
+	border-radius: 5%;
+  transition: all 0.3s ease 0s;
+}
+
+.gallery-animation:hover {
+	cursor: pointer;
+  transform: scale(1.05, 1.05);
+	background-color: #88B6A9;
+	box-shadow: 0 3px 6px 0 rgba(0, 1, 0, 1);
 }
 
 .management-image{
@@ -30,29 +50,332 @@ span {
 
 .food-image{
 	width: 25vw;
-	border-radius: 10px;
+	border-radius: 5%;
 }
 
 .image-text{
 	text-align: center;
 	color: black;
-	font-size: 20px;
+	font-size: 3vw;
 }
 
 .consumption-image{
 	width: 25vw;
-	border-radius: 10px;
+	border-radius: 5%;
 }
 
 .loss-image{
 	width: 25vw;
-	border-radius: 10px;
+	border-radius: 5%;
 }
 
-.text{
-	font-size: 17px;
-	width: 70%;
-	margin: 0 auto;
-	padding: 40px 0 60px 0;
+.product{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin-top: 10vh;
+}
+
+.product-name {
+	font-size: 3.7vw;
+	width: 35vw;
+	text-align: center;
+	padding-bottom: 1vh;
+	border-bottom:5px solid #88B6A9;
 	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.product-main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-top: 8vh;
+}
+
+.product-text{
+	font-size: 1.9vw;
+	width: 40vw;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+	border-top: 5px dotted #BCBCBE;
+	border-bottom: 5px dotted #BCBCBE;
+}
+
+.product-text>span{
+	font-size: 2.2vw;
+	color: #00745A;
+}
+
+.product-text>p{
+	color: #C55A5A;
+	font-size: 1.7vw;
+}
+
+.deco-image{
+	border-radius: 50%;
+	width: 38vw;
+	border: 4px solid #BCBCBE;
+	transition: all 0.6s ease 0s;
+}
+
+.deco-image:hover{
+  transform: scale(1.1, 1.1);
+}
+
+.message{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin-top: 10vh;
+}
+
+.message-name {
+	font-size: 3.7vw;
+	width: 35vw;
+	text-align: center;
+	padding-bottom: 1vh;
+	border-bottom:5px solid #88B6A9;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.message-main{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-top: 8vh;
+}
+
+.message-text1{
+	font-size: 1.9vw;
+	width: 40vw;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+	border-top: 5px dotted #BCBCBE;
+	border-bottom: 5px dotted #BCBCBE;
+}
+
+.message-text1>span{
+	font-size: 2.2vw;
+	color: #00745A;
+}
+
+.message-text2{
+	font-size: 1.9vw;
+	width: 40vw;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+	border-top: 5px dotted #BCBCBE;
+	border-bottom: 5px dotted #BCBCBE;
+}
+
+.message-text2>span{
+	font-size: 2.2vw;
+	color: #00745A;
+}
+
+.message-text3{
+	font-size: 1.9vw;
+	width: 40vw;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+	border-top: 5px dotted #BCBCBE;
+	border-bottom: 5px dotted #BCBCBE;
+}
+
+.message-text3>span{
+	font-size: 2.2vw;
+	color: #00745A;
+}
+
+.news{
+  display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin-top: 10vh;
+}
+
+.news-name {
+	font-size: 3.7vw;
+	width: 42vw;
+	text-align: center;
+	padding-bottom: 1vh;
+	border-bottom:5px solid #88B6A9;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.all-news-text{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.news-text{
+	border-top: 5px dotted #BCBCBE;
+	border-bottom: 5px dotted #BCBCBE;
+	width: 80vw;
+	padding: 2vh 0;
+	margin: 8vh 0;
+	font-size: 1.7vw;
+}
+
+.news-text1{
+  border-bottom: 1px solid #BCBCBE;
+	padding-bottom: 0.5vh;
+}
+
+.news-text2{
+  border-bottom: 1px solid #BCBCBE;
+	padding:0.5vh 0 0.5vh 0;
+}
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+	.top-image {
+		height: 50vh;
+	}
+	
+	.gallery{
+		margin-top: 5vh;
+	}
+	
+	.gallery-text {
+		font-size: 6vw;
+		width: 55vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.gallery-image{
+		padding-top: 6vh;
+
+	}
+	
+	.gallery-animation{
+		border: 5px solid #BCBCBE;
+		margin-bottom: 4vh;
+	}
+	
+	.food-image{
+		width: 30vw;
+	}
+	
+	.image-text{
+		font-size: 5vw;
+		margin-bottom: 1vh;
+	}
+	
+	.consumption-image{
+		width: 30vw;
+	}
+	
+	.loss-image{
+		width: 30vw;
+	}
+	
+	.product{
+		margin-top: 5vh;
+	}
+	
+	.product-name {
+		font-size: 6vw;
+		width: 50vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.product-main{
+		padding-top: 5vh;
+	}
+	
+	.product-text{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin: 3vh 0;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.product-text>span{
+		font-size: 2.7vw;
+	}
+	
+	.product-text>p{
+		font-size: 2.3vw;
+	}
+	
+	.deco-image{
+		border-radius: 50%;
+		width: 40vw;
+	}
+	
+	.deco-image:hover{
+		transform: scale(1.05, 1.05);
+	}
+	
+	.message{
+		margin-top: 8vh;
+	}
+	
+	.message-name {
+		font-size: 6vw;
+		width: 55vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.message-main{
+		padding-top: 5vh;
+	}
+	
+	.message-text1{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin: 3vh 0;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text1>span{
+		font-size: 2.7vw;
+	}
+	
+	.message-text2{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin-bottom: 3vh;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text2>span{
+		font-size: 2.7vw;
+	}
+	
+	.message-text3{
+		font-size: 2.5vw;
+		width: 50vw;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text3>span{
+		font-size: 2.7vw;
+	}
+	
+	.news{
+		margin-top: 8vh;
+	}
+	
+	.news-name {
+		font-size: 6vw;
+		width: 67vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.news-text{
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+		width: 85vw;
+		font-size: 2.5vw;
+	}
 }

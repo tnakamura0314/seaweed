@@ -1,0 +1,53 @@
+<%= render "shared/header" %>
+
+<div class = "buy-lists">
+  <div class='food-title'>
+    <div class='title'>
+      買い物リスト
+   </div>
+  </div>
+
+  <div class = "sort-page">
+    <%# <div class = "sort">
+    </div> %>
+    <ul class = "another-page1">
+      <li><%= link_to '食品一覧', foods_path, class: "page-menu3" %></li>
+      <li><%= link_to '消費一覧', food_consumptions_path, class: "page-menu3" %></li>
+      <li><%= link_to '廃棄一覧', food_losses_path, class: "page-menu4" %></li>
+    </ul>
+  </div>
+
+
+  <%= form_with url: "/posts", method: :post,id: "form" do |f| %>
+    <div class = "buy-form">
+      <div class ="text-area">
+        <%= f.text_area :content, class: "text-area1" ,id: "content", placeholder:"食品をメモしよう！", :size=> "44x8"%>
+      </div>
+      <div class = "text-btn">
+        <%= f.submit 'メモする', class: "text-btn1", id: "submit" %>
+      </div>
+    </div>
+  <% end %>
+
+  <div id="list">
+  </div>
+
+  <% @posts.each do |post| %>
+    <% if post.user_id == current_user.id %>
+      <div class = "posts">
+        <div class="post" data-id=<%= post.id %> data-check=<%= post.checked %>>
+          <div class="post-date">
+            <p>投稿日時：<%= post.created_at %></p>
+          </div>
+          <div class="post-content">
+            <p class = "txt"><%= post.text %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+
+<%= render "shared/add_to_btn" %>
+
+<%= render "shared/footer" %>

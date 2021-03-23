@@ -19,6 +19,7 @@ class User < ApplicationRecord
   end
 
   has_many :foods
+  has_many :posts
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :sex

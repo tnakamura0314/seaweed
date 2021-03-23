@@ -1,0 +1,111 @@
+.buy-lists{
+  width: 100vw;
+  height: auto;
+  background-image: url(/assets/post.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.food-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.title {
+  background-color: #FFF;
+  text-align: center;
+  font-size: 4.5vw;
+  width:30vw;
+  margin: 12vh 0 5vh 0;
+  border-bottom:5px solid #88B6A9;
+}
+
+.another-page1{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 4vh 0 6vh 0;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.buy-form{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+}
+
+.text-area1{
+  margin-top: 1vh;
+  border:4px solid #BCBCBE;
+  border-radius: 5px;
+  font-size: 2vw;
+}
+
+.text-btn1{
+  font-size: 2.2vw;
+  padding: 1vh 2vw;
+  margin:2vh 0 4vh;
+  border:4px solid #BCBCBE;
+  background-color: #88B6A9;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0s ease 0s;
+}
+
+.text-btn1:hover {
+  border: none;
+  height: calc(35px + 2vh);
+}
+
+.posts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  cursor: pointer;
+}
+
+.post{
+  border:3px solid #BCBCBE;
+  padding: 1%;
+  border-radius: 5px;
+  width: 54vw;
+  height:auto;
+  margin: 10px 0 30px;
+}
+
+
+.post-date{
+  margin: 1vh auto;
+  color: #88B6A9;
+  width: 36vw;
+  border-bottom: 2px dotted #88B6A9;
+  font-size: 2vw;
+}
+
+.post-content{;
+  font-size: 2vw;
+  text-align: center;
+}
+
+.txt{
+  display: inline-block;
+  text-align: left;
+}
+
+.post-date>p{
+  white-space: pre-wrap;
+}
+
+.post-content>p{;
+  white-space: pre-wrap;
+}
+
+div[data-check="true"] {
+  background: #BCBCBE;
+  border:3px solid #88B6A9;
+}

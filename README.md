@@ -115,7 +115,7 @@ Seaweedとは、海藻という意味の言葉である。
 ### Association
 
 - has_many :foods
-- has_many :buy_lists
+- has_many :posts
 
 
 ## foodsテーブル
@@ -134,7 +134,7 @@ Seaweedとは、海藻という意味の言葉である。
 - belongs_to :user
 
 
-## buy_listsテーブル
+## postsテーブル
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | ------------------------------ |

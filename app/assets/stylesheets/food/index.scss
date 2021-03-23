@@ -87,7 +87,7 @@
   color: #C55A5A;
 }
 
-.page-menu{
+.page-menu1{
   text-decoration: none;
   background-color: #88B6A9;
   border: 4px solid #BCBCBE;
@@ -95,11 +95,13 @@
   border-radius: 4%;
   font-size: 3vw;
   padding: 1vh 1vw;
+  margin-left: 5vw;
   transition: all 0s ease 0s;
 }
 
-.page-menu:hover {
+.page-menu1:hover {
   border: none;
+  margin-left: calc(5vw + 8px);
 }
 
 .page-menu2{
@@ -247,14 +249,14 @@
     font-size: 2vw;
   }
 
-  .page-menu{
+  .page-menu1{
     border: 5px solid #BCBCBE;
     font-size: 5vw;
     padding: 1vh 1.5vw;
     margin:0 15vw 0 6vw;
   }
 
-  .page-menu:hover {
+  .page-menu1:hover {
     margin-left: calc(5vw + 16px);
   }
   
@@ -272,9 +274,6 @@
     margin-top: 6vh;
   }
   
-
-
-
   .food-lists {
     width: 100vw;
     flex-direction: column;

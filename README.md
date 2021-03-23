@@ -138,8 +138,8 @@ Seaweedとは、海藻という意味の言葉である。
 
 | Column      | Type       | Options                        |
 | ----------- | ---------- | ------------------------------ |
-| text        | text       | null: false                    |
-| checked     | boolean    | null: false                    |
+| text        | text       |                                |
+| checked     | boolean    |                                |
 | user        | references | null: false, foreign_key: true |
 
 ### Association

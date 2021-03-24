@@ -2,7 +2,8 @@ require 'rails_helper'
 
 RSpec.describe Food, type: :model do
   before do
-    @food = FactoryBot.build(:food)
+    @user = FactoryBot.create(:user)
+    @food = FactoryBot.build(:food, user_id: @user.id)
     @food.image = fixture_file_upload('app/assets/images/sample.jpg')
   end
 
@@ -57,6 +58,11 @@ RSpec.describe Food, type: :model do
         @food.number = 'aaaaaa'
         @food.valid?
         expect(@food.errors.full_messages).to include("Number half-width characters")
+      end
+      it 'user_idが空だと登録できない' do
+        @food.user_id = nil
+        @food.valid?
+        expect(@food.errors.full_messages).to include("User can't be blank")
       end
     end
   end

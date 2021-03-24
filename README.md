@@ -25,7 +25,7 @@ Seaweedとは、海藻という意味の言葉である。
 <br>
 
 # App URL
-### **  ** 
+### **https://seaweed-34460.herokuapp.com/** 
 <br>
 
 

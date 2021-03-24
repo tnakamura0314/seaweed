@@ -31,8 +31,8 @@ Seaweedとは、海藻という意味の言葉である。
 
 # 使用方法
 
-#### `トップページのヘッダーから新規登録・ログイン`
-#### `ログイン後に、食品管理機能が表示される`<br>
+#### `トップページのヘッダーからログイン・新規登録`
+#### `ログイン後に、食品管理一覧が表示される`<br>
 
 ![image](https://user-images.githubusercontent.com/70365627/112243930-cc42ab80-8c91-11eb-8c9f-52a38198fd87.png)
 <br>
@@ -50,11 +50,15 @@ Seaweedとは、海藻という意味の言葉である。
 
 #### `食品を消費または廃棄した場合は、該当の食品をクリックし、編集ページから状態を指定する`
 #### `状態の指定によって、食品一覧/消費一覧/廃棄一覧ページに食品を移動できる`
-#### `通録した食品の削除ができる`<br>
+#### `登録した食品の削除ができる`<br>
 
 ![image](https://user-images.githubusercontent.com/70365627/112134027-a2e13b80-8c0f-11eb-83d8-e4ea143e7d46.png)
 <br>
 ![image](https://user-images.githubusercontent.com/70365627/112134188-cdcb8f80-8c0f-11eb-8898-8320367f3a20.png)
+<br>
+![image](https://user-images.githubusercontent.com/70365627/112246696-60af0d00-8c96-11eb-8063-d5512768a525.png)
+<br>
+![image](https://user-images.githubusercontent.com/70365627/112247005-e3d06300-8c96-11eb-9943-5399c3e49e37.png)
 <br>
 <br>
   

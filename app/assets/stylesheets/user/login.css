@@ -12,13 +12,13 @@
 }
 
 .login-btn1{
-  width: 25vw;
+  width: 18vw;
   margin: 6vh 0;
   background: #88B6A9;
   border: 1px solid #88B6A9;
   color: black;
-  line-height: 5vh;
-  font-size: 14px;
+  padding: 16px 0;
+  font-size: 1.7vw;
   cursor: pointer;
   border-radius: 4px;
 }

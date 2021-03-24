@@ -48,7 +48,7 @@
   margin-left: 1vw;
   border-radius: 4px;
   color: black;
-  font-size: 1.2vw;
+  font-size: 0.7vw;
 }
 
 .input-default {
@@ -122,7 +122,7 @@
   background: #88B6A9;
   border: 1px solid #88B6A9;
   color: black;
-  line-height: 5vh;
+  padding: 16px 0;
   font-size: 1.5vw;
   cursor: pointer;
   border-radius: 4px;

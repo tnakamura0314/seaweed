@@ -73,7 +73,7 @@
 }
 
 .text-area1{
-  margin-top: 1vh;
+  margin: 1vh 0 1.5vh;
   border:4px solid #BCBCBE;
   border-radius: 5px;
   font-size: 2vw;
@@ -81,8 +81,8 @@
 
 .text-btn1{
   font-size: 2.2vw;
-  padding: 0.8vh 2vw;
-  margin:2vh 0 4vh;
+  margin: 0 5vw;
+  padding: 1vh 1vw;
   border:4px solid #BCBCBE;
   background-color: #88B6A9;
   border-radius: 5px;
@@ -92,14 +92,14 @@
 
 .text-btn1:hover {
   border: none;
-  margin-left: 4px;
-  height: calc(35px + 1.6vh);
+  margin-left: calc(5vw + 8px);
+  margin-bottom: 8px;
 }
 
 .posts{
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
   cursor: pointer;
 }
@@ -110,7 +110,7 @@
   border-radius: 5px;
   width: 54vw;
   height:auto;
-  margin: 10px 0 30px;
+  margin: 2vh 0;
 }
 
 
@@ -181,11 +181,23 @@ div[data-check="true"] {
   
   .text-btn1{
     font-size: 3vw;
+    margin: 0 5vw;
+    padding: 1vh 1vw;
+    border:4px solid #BCBCBE;
+    background-color: #88B6A9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0s ease 0s;
+  }
+  
+  .text-btn1:hover {
+    border: none;
+    margin-left: calc(5vw + 8px);
+    margin-bottom: 8px;
   }
   
   .post{
     width: 62vw;
-    margin: 5px 0 30px;
     border:4px solid #BCBCBE;
   }
   
@@ -193,7 +205,7 @@ div[data-check="true"] {
   .post-date{
     width: 52vw;
     border-bottom: 4px dotted #88B6A9;
-    font-size: 3vw;
+    font-size: 2.9vw;
   }
   
   .post-content{;

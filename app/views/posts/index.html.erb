@@ -1,6 +1,6 @@
 <%= render "shared/header" %>
 
-<div class = "buy-lists">
+<div class = "buy-lists" >
   <div class='food-title'>
     <div class='title'>
       買い物リスト
@@ -18,13 +18,13 @@
   </div>
 
 
-  <%= form_with url: "/posts", method: :post,id: "form" do |f| %>
+  <%= form_with url: "/posts", method: :post,id: "form" do |form| %>
     <div class = "buy-form">
       <div class ="text-area">
-        <%= f.text_area :content, class: "text-area1" ,id: "content", placeholder:"食品をメモしよう！", :size=> "44x8"%>
+        <%= form.text_area :content, class: "text-area1" ,id: "content", placeholder:"食品をメモしよう！", :size=> "44x8"%>
       </div>
       <div class = "text-btn">
-        <%= f.submit 'メモする', class: "text-btn1", id: "submit" %>
+        <%= form.submit 'メモする', class: "text-btn1", id: "submit" %>
       </div>
     </div>
   <% end %>

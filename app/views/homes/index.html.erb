@@ -1,6 +1,6 @@
 <%= render "shared/home_header" %>
 
-  <%= image_tag "top_image.jpeg", class:"top-image" %>
+  <%= image_tag "top_image.jpg", class:"top-image" %>
 
     <!-- GALLERY -->
     <% if user_signed_in? %>
@@ -12,19 +12,19 @@
       <ul class="gallery-image">
         <li class = "gallery-animation">
           <%= link_to foods_path, class: 'management-image' do %>
-            <%= image_tag("480_480.jpeg", class: "food-image") %>
+            <%= image_tag("480_480.jpg", class: "food-image") %>
             <div class = "image-text" >食品一覧</div>
           <% end %>
         </li>
         <li class = "gallery-animation">
           <%= link_to food_consumptions_path, class: 'management-image' do %>
-            <%= image_tag("374411.jpeg", class: "consumption-image") %>
+            <%= image_tag("374411.jpg", class: "consumption-image") %>
             <div class = "image-text">消費一覧</div>
           <% end %>
         </li>
         <li class = "gallery-animation">
           <%= link_to food_losses_path, class: 'management-image' do %>
-            <%= image_tag("086354.jpeg", class: "loss-image") %>
+            <%= image_tag("086354.jpg", class: "loss-image") %>
             <div class = "image-text">廃棄一覧</div>
           <% end %>
         </li>
@@ -52,7 +52,7 @@
         <p>※新規登録後に、管理一覧が表示されます。</p><br>
       </div>
       <div calss = "product-image">
-        <%= image_tag("reizouko.jpeg", class: "deco-image") %>
+        <%= image_tag("reizouko.jpg", class: "deco-image") %>
       </div>
     </div>
     <!-- // PRODUCT -->

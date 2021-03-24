@@ -31,5 +31,5 @@ function memo() {
     e.preventDefault();
   });
 }
-window.addEventListener("click", memo);
+window.addEventListener("load", memo);
 

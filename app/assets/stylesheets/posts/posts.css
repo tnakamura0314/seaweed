@@ -18,7 +18,7 @@
   background-color: #FFF;
   text-align: center;
   font-size: 4.5vw;
-  width:30vw;
+  width:28vw;
   margin: 12vh 0 5vh 0;
   border-bottom:5px solid #88B6A9;
 }
@@ -152,7 +152,7 @@ div[data-check="true"] {
 
   .title {
     font-size: 7vw;
-    width:42vw;
+    width:40vw;
     margin: 10vh 0 4vh 0;
   }
   

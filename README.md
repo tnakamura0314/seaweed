@@ -64,11 +64,11 @@ Seaweedとは、海藻という意味の言葉である。
 <br>
 
 #### `買い足す食品をメモに残すことができる`
-#### `食品一覧ページの「買い物リスト」ボタンより、買い物リストページに遷移`
+#### `食品一覧ページの「買い物メモ」ボタンより、買い物リストページに遷移`
 #### `メモを投稿することができる`
 #### `使い終わったメモをクリックすることで、グレーカラーになり既読にすることができる`<br>
 
-![Animated GIF-downsized (3)](https://user-images.githubusercontent.com/70365627/112406295-45f09d00-8d57-11eb-9c36-2d96ace3c6de.gif)
+![Animated GIF-downsized (5)](https://user-images.githubusercontent.com/70365627/112410261-42144900-8d5e-11eb-8831-a40292dfa3eb.gif)
 <br>
 <br>
 

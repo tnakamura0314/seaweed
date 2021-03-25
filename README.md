@@ -34,17 +34,13 @@ Seaweedとは、海藻という意味の言葉である。
 #### `トップページのヘッダーからログイン・新規登録`
 #### `ログイン後に、食品管理一覧が表示される`<br>
 
-![image](https://user-images.githubusercontent.com/70365627/112243930-cc42ab80-8c91-11eb-8c9f-52a38198fd87.png)
-<br>
-![image](https://user-images.githubusercontent.com/70365627/112243878-b208cd80-8c91-11eb-8173-400101b9fed6.png)
+![Animated GIF-downsized (4)](https://user-images.githubusercontent.com/70365627/112406842-4d647600-8d58-11eb-93fc-83fb170c8f4f.gif)
 <br>
 
 #### `右下の「食品追加」ボタンより、食品を追加する`
 #### `登録完了後は食品一覧画面に表示される`<br>
 
-![image](https://user-images.githubusercontent.com/70365627/112133234-d40d3c00-8c0e-11eb-903f-fb9c1fde0d63.png)
-<br>
-![image](https://user-images.githubusercontent.com/70365627/112133784-631a5400-8c0f-11eb-9d29-8fd5cc50e487.png)
+![Animated GIF-downsized](https://user-images.githubusercontent.com/70365627/112404842-771b9e00-8d54-11eb-88fb-a877e81f4057.gif)
  <br>
  <br>
 
@@ -52,13 +48,10 @@ Seaweedとは、海藻という意味の言葉である。
 #### `状態の指定によって、食品一覧/消費一覧/廃棄一覧ページに食品を移動できる`
 #### `登録した食品の削除ができる`<br>
 
-![image](https://user-images.githubusercontent.com/70365627/112134027-a2e13b80-8c0f-11eb-83d8-e4ea143e7d46.png)
+![Animated GIF-downsized (1)](https://user-images.githubusercontent.com/70365627/112405396-864f1b80-8d55-11eb-8e09-c2187a29fff0.gif)
 <br>
-![image](https://user-images.githubusercontent.com/70365627/112134188-cdcb8f80-8c0f-11eb-8898-8320367f3a20.png)
 <br>
-![image](https://user-images.githubusercontent.com/70365627/112246696-60af0d00-8c96-11eb-8063-d5512768a525.png)
-<br>
-![image](https://user-images.githubusercontent.com/70365627/112247005-e3d06300-8c96-11eb-9943-5399c3e49e37.png)
+![Animated GIF-downsized (2)](https://user-images.githubusercontent.com/70365627/112405707-260ca980-8d56-11eb-92aa-e6a1ebac5f36.gif)
 <br>
 <br>
   
@@ -75,7 +68,7 @@ Seaweedとは、海藻という意味の言葉である。
 #### `メモを投稿することができる`
 #### `使い終わったメモをクリックすることで、グレーカラーになり既読にすることができる`<br>
 
-![image](https://user-images.githubusercontent.com/70365627/112134657-4e8a8b80-8c10-11eb-9995-2f83ccd3986f.png)
+![Animated GIF-downsized (3)](https://user-images.githubusercontent.com/70365627/112406295-45f09d00-8d57-11eb-9c36-2d96ace3c6de.gif)
 <br>
 <br>
 

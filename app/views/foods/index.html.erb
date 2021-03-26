@@ -71,7 +71,7 @@
                     <div class = 'food-deadline2'>
                       <%= food.deadline %>(期限切れ)
                     </div>
-                  <% elsif food.deadline <= Date.today.days_since(3) %>
+                  <% elsif food.deadline <= Date.today.days_since(2) %>
                     <div class = 'food-deadline3'>
                       <%= food.deadline %>(3日以内)
                     </div>

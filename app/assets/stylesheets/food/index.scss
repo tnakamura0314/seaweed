@@ -303,8 +303,24 @@
 /* タブレット表示時 */
 @media (min-width:600px) and (max-width:1024px) {
   
+  .link-title{
+    font-size: 2.3vw;
+  }
+
+  .link-deco{
+    font-size: 2.3vw;
+  }
+
   .caution{
     font-size: 2vw;
+  }
+
+  .page-menu1{
+    font-size: 3vw;
+  }
+  
+  .page-menu2{
+    font-size: 3vw;
   }
   
   .food-lists > .list {

@@ -245,7 +245,7 @@
   }
   
   .user-nickname{
-    margin-right: 18px;
+    margin-right: 16px;
     padding-bottom: 5px;
     font-size: 2vw;
   }
@@ -291,7 +291,7 @@
   
   .lists-left-product{
     margin: 0 40px;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
   }
   
   .lists-left-product::after {
@@ -301,7 +301,7 @@
   .lists-left-message{
     padding-bottom: 5px;
     margin-right: 40px;
-    font-size: 1.9vw;
+    font-size: 1.8vw;
   }
   
   .lists-left-message::after {
@@ -319,7 +319,7 @@
   
   .user-nickname{
     margin-right: 22px;
-    font-size: 2.1vw;
+    font-size: 2vw;
   }
   
   .user-nickname::after {
@@ -328,7 +328,7 @@
   
   .logout {
     padding-bottom: 5px;
-    font-size: 2.1vw;
+    font-size: 2vw;
   }
   
   .logout::after {
@@ -337,7 +337,7 @@
   
   .login {
     margin-right: 22px;
-    font-size: 2.1vw;
+    font-size: 2vw;
   }
   
   .login::after {
@@ -345,7 +345,7 @@
   }
   
   .sign-up {
-    font-size: 2.1vw;
+    font-size: 2vw;
   }
   
   .sign-up::after {

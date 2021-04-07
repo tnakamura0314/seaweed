@@ -379,3 +379,143 @@
 		font-size: 2.5vw;
 	}
 }
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+	.top-image {
+		height: 70vh;
+	}
+	
+	.gallery{
+		margin-top: 8vh;
+	}
+	
+	.gallery-text {
+		font-size: 5vw;
+		width: 46vw;
+	}
+	
+	.gallery-animation{
+		border: 5px solid #BCBCBE;
+	}
+	
+	.food-image{
+		width: 28vw;
+	}
+	
+	.image-text{
+		font-size: 4.5vw;
+	}
+	
+	.consumption-image{
+		width: 28vw;
+	}
+	
+	.loss-image{
+		width: 28vw;
+	}
+	
+	.product{
+		margin-top: 8vh;
+	}
+	
+	.product-name {
+		font-size: 5vw;
+		width: 42vw;
+	}
+	
+	.product-main{
+		padding-top: 5vh;
+	}
+	
+	.product-text{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin: 3vh 0;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.product-text>span{
+		font-size: 2.7vw;
+	}
+	
+	.product-text>p{
+		font-size: 2.3vw;
+	}
+	
+	.deco-image{
+		border-radius: 50%;
+		width: 40vw;
+	}
+	
+	.deco-image:hover{
+		transform: scale(1.05, 1.05);
+	}
+	
+	.message{
+		margin-top: 8vh;
+	}
+	
+	.message-name {
+		font-size: 5vw;
+		width: 46vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.message-main{
+		padding-top: 5vh;
+	}
+	
+	.message-text1{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin: 3vh 0;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text1>span{
+		font-size: 2.7vw;
+	}
+	
+	.message-text2{
+		font-size: 2.5vw;
+		width: 50vw;
+		margin-bottom: 3vh;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text2>span{
+		font-size: 2.7vw;
+	}
+	
+	.message-text3{
+		font-size: 2.5vw;
+		width: 50vw;
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+	}
+	
+	.message-text3>span{
+		font-size: 2.7vw;
+	}
+	
+	.news{
+		margin-top: 8vh;
+	}
+	
+	.news-name {
+		font-size: 5vw;
+		width: 55vw;
+		padding-bottom: 0.5vh;
+	}
+	
+	.news-text{
+		border-top: 7px dotted #BCBCBE;
+		border-bottom: 7px dotted #BCBCBE;
+		width: 85vw;
+		font-size: 2.5vw;
+	}
+}

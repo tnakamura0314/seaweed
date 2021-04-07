@@ -212,17 +212,70 @@
   /* フッター */
 
   .foods-sell-footer {
-  padding: 0.5vh 0;
+    padding: 0.5vh 0;
+  }
+
+  .menu>li>a {
+    color: black;
+    font-size: 2.5vw;
+  }
+
+  .inc {
+    font-size: 2vw;
+  }
+
+  /* /フッター */
 }
 
-.menu>li>a {
-  color: black;
-  font-size: 2.5vw;
-}
+/* タブレット表示時 */
+@media (min-width:600px) and (max-width:1024px) {
 
-.inc {
-  font-size: 2vw;
-}
+  .foods-sell-main {
+    width: 70vw;
+  }
 
-/* /フッター */
+  .foods-sell-title1 {
+    width: 32vw;
+    font-size: 4vw;
+  }
+
+  .weight-text {
+    font-size: 2.5vw;
+  }
+
+  .input-deadline-wrap{
+    font-size: 2.5vw;
+  }
+
+  /* 下部ボタン */
+
+  .sell-btn {
+    width: 95%;
+    font-size: 3vw;
+    margin-bottom: 5vh;
+  }
+
+  .back-btn {
+    padding: 24px 32%;
+    font-size: 3vw;
+  }
+
+  /* /下部ボタン */
+
+
+  /* フッター */
+
+  .foods-sell-footer {
+    padding: 0.5vh 0;
+  }
+
+  .menu>li>a {
+    font-size: 2vw;
+  }
+
+  .inc {
+    font-size: 1.7vw;
+  }
+
+  /* /フッター */
 }

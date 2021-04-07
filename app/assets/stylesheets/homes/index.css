@@ -381,7 +381,7 @@
 }
 
 /* タブレット表示時 */
-@media (max-width: 1024px) {
+@media (min-width:600px) and (max-width:1024px) {
 	.top-image {
 		height: 70vh;
 	}

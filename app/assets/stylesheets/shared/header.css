@@ -282,3 +282,73 @@
     border-bottom: 2px solid black;
   }
 }
+
+/* タブレット表示時 */
+@media (max-width: 1024px) {
+	.top-page-header {
+    height: 90px;
+  }
+  
+  .lists-left-product{
+    margin: 0 40px;
+    font-size: 1.9vw;
+  }
+  
+  .lists-left-product::after {
+    border-bottom: 3px solid black;
+  }
+  
+  .lists-left-message{
+    padding-bottom: 5px;
+    margin-right: 40px;
+    font-size: 1.9vw;
+  }
+  
+  .lists-left-message::after {
+    border-bottom: 3px solid black;
+  }
+  
+  .lists-left-news{
+    padding-bottom: 5px;
+    font-size: 1.9vw;
+  }
+  
+  .lists-left-news::after {
+    border-bottom: 3px solid black;
+  }
+  
+  .user-nickname{
+    margin-right: 22px;
+    font-size: 2.1vw;
+  }
+  
+  .user-nickname::after {
+    border-bottom: 3px solid black;
+  }
+  
+  .logout {
+    padding-bottom: 5px;
+    font-size: 2.1vw;
+  }
+  
+  .logout::after {
+    border-bottom: 3px solid black;
+  }
+  
+  .login {
+    margin-right: 22px;
+    font-size: 2.1vw;
+  }
+  
+  .login::after {
+    border-bottom: 3px solid black;
+  }
+  
+  .sign-up {
+    font-size: 2.1vw;
+  }
+  
+  .sign-up::after {
+    border-bottom: 3px solid black;
+  }
+}

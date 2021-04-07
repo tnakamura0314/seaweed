@@ -149,63 +149,7 @@
 }
 
 /* スマホ表示時 */
-@media (max-width: 599px) {  
-  .footer-logo1{
-    margin-top: 10px;
-  }
-  
-  .footer-menu1{
-    width:77vw;
-    font-size: 2vw;
-  }
-  
-  .how-to-use{
-    padding-bottom: 0.5vh;
-  }
-  
-  .how-to-use::after {
-    border-bottom: 2px solid black;
-  }
-  
-  .help{
-    padding-bottom: 0.5vh;
-  }
-  
-  .help::after {
-    border-bottom: 2px solid black;
-  }
-    
-  .contact-us{
-    padding-bottom: 0.5vh;
-  }
-  
-  .contact-us::after {
-    border-bottom: 2px solid black;
-  }
-  
-  .terms-of-service{
-    padding-bottom: 0.5vh;
-  }
-  
-  .terms-of-service::after {
-    border-bottom: 2px solid black;
-  }
-  
-  .privacy{
-    padding-bottom: 0.5vh;
-  }
-  
-  .privacy::after {
-    border-bottom: 2px solid black;
-  }
-  
-  .copylight{
-    padding-bottom: 2px;
-  }
-}
-
-/* スマホ表示時 */
-@media (max-width: 1024px) {  
+@media (max-width: 599px) {
   .footer-logo1{
     margin-top: 10px;
   }

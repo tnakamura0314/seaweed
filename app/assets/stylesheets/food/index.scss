@@ -299,3 +299,45 @@
     font-size: 4vw;
   }
 }
+
+/* タブレット表示時 */
+@media (min-width:600px) and (max-width:1024px) {
+  
+  .link-title{
+    font-size: 2.3vw;
+  }
+
+  .link-deco{
+    font-size: 2.3vw;
+  }
+
+  .caution{
+    font-size: 2vw;
+  }
+
+  .page-menu1{
+    font-size: 3vw;
+  }
+  
+  .page-menu2{
+    font-size: 3vw;
+  }
+  
+  .food-lists > .list {
+    width: 45vw;
+  }
+
+  .food-info {
+    margin-top: 1vh;
+    font-size: 2.2vw;
+  }
+
+  .food-name1 {
+    font-size: 2.5vw;
+  }
+  
+  .food-name2 {
+    font-size: 2.5vw;
+  }
+
+}

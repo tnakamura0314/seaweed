@@ -148,7 +148,8 @@
   color: black;
 }
 
-@media (max-width: 599px) {  
+/* スマホ表示時 */
+@media (max-width: 599px) {
   .footer-logo1{
     margin-top: 10px;
   }

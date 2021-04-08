@@ -150,6 +150,7 @@
   font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
 }
 
+/* スマホ表示時 */
 @media (max-width: 599px) {  
   .form-wrap {
     width: 80vw;
@@ -212,7 +213,89 @@
   
   .register-btn1 {
     width:47vw;
-    line-height: 5.4vh;
+    line-height: 3.5vh;
     font-size: 4.5vw;
+  }
+}
+
+/* タブレット表示時 */
+@media (min-width:600px) and (max-width:1024px) {
+
+  .form-wrap {
+    width: 70vw;
+  }
+  
+  .form-header {
+    font-size: 4vw;
+  }
+  
+  .form-header-text {
+    width:18vw;
+  }
+  
+  .form-group {
+    width: 55vw;
+  }
+  
+  .form-text {
+    font-size: 2.5vw;
+  }
+  
+  .indispensable {
+    margin-left: 1vw;
+    font-size: 1.3vw;
+  }
+  
+  .input-default {
+    font-size: 2.5vw;
+  }
+  
+  .info-text {
+    font-size: 2.5vw;
+    margin-top: 0.5vh;
+  }
+  
+  .input-birth-wrap {
+    width: 50vw;
+  }
+  
+  .input-birth-wrap select {
+    width:12vw;
+    padding: 10px 0;
+    font-size: 2vw;
+  }
+  
+  .input-birth-wrap p {
+    line-height: 6vh;
+    font-size: 3vw;
+    padding-top: 12px;
+  }
+  
+  .form-bottom-text {
+    font-size: 2.8vw;
+  }
+  
+  .form-bottom-text>span {
+    font-size: 2.5vw;
+  }
+  
+  .register-btn1 {
+    width:47vw;
+    line-height: 5.4vh;
+    font-size: 3vw;
+  }
+
+  .select-box1 {
+    height: 40px;
+    width: 50%;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+  }
+
+  .select-box2 {
+    height: 40px;
+    width: 50%;
+    background-color: #f5f5f5;
+    border-radius: 2px;
   }
 }

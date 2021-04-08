@@ -146,6 +146,7 @@
 /* /下部ボタン */
 
 @media (max-width: 599px) {
+
   .food_type_label{
     font-size: 2.9vw;
     margin-right: 10px;
@@ -168,6 +169,39 @@
   }
   
   .back-btn1 {
+    font-size: 2.8vw;
+  }
+  /* /下部ボタン */
+}
+
+/* タブレット表示時 */
+@media (min-width:600px) and (max-width:1024px) {
+
+  .food_type_label{
+    font-size: 2.5vw;
+    margin-right: 15px;
+  }
+  
+  .foods-status{
+    margin-bottom: 80px;
+  }
+  
+  /* 下部ボタン */
+  
+  .edit-btn {
+    font-size: 3vw;
+    height:80px;
+    margin-bottom: 3.5vh;
+  }
+  
+  .destroy-btn {
+    font-size: 2.8vw;
+    height: 75px;
+    margin-bottom: 2.5vh;
+  }
+  
+  .back-btn1 {
+    height: 75px;
     font-size: 2.8vw;
   }
   /* /下部ボタン */

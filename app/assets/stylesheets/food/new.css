@@ -68,7 +68,8 @@
 
 .quantity-form{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .select-box {
@@ -80,6 +81,16 @@
 
 .foods-text{
   margin-right: 1vw;
+}
+
+.input-default1{
+  width:100px;
+  margin-top: 2vh;
+  border-radius: 4px;
+  border: 1px solid #BCBCBE;
+  background: #fff;
+  font-size: 1.5vw;
+  text-align: left;
 }
 
 .foods-deadline{
@@ -189,6 +200,23 @@
     font-size: 3vw;
   }
 
+  .select-box {
+    height: 30px;
+    width: 40%;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+  }
+
+  .input-default1{
+    width:98px;
+    margin-top: 2vh;
+    border-radius: 4px;
+    border: 1px solid #BCBCBE;
+    background: #fff;
+    font-size: 2.8vw;
+    text-align: left;
+  }
+
   .input-deadline-wrap{
     width: 70vw;
     font-size: 3vw;
@@ -242,6 +270,23 @@
 
   .weight-text {
     font-size: 2.5vw;
+  }
+
+  .select-box {
+    height: 40px;
+    width: 40%;
+    background-color: #f5f5f5;
+    border-radius: 2px;
+  }
+
+  .input-default1{
+    width:180px;
+    margin-top: 2vh;
+    border-radius: 4px;
+    border: 1px solid #BCBCBE;
+    background: #fff;
+    font-size: 2.5vw;
+    text-align: left;
   }
 
   .input-deadline-wrap{

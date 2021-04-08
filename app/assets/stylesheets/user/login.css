@@ -28,6 +28,7 @@
   color: #C55A5A;
 }
 
+/* スマホ表示時 */
 @media (max-width: 599px) {
   .form-header-text1 {
     width:34vw;
@@ -37,6 +38,21 @@
 
   .login-btn1{
     width: 43vw;
+    margin: 6vh 0;
+    font-size: 3vw;
+  }
+}
+
+/* タブレット表示時 */
+@media (min-width:600px) and (max-width:1024px) {
+
+  .form-header-text1 {
+    width:26vw;
+    font-size: 4vw;
+  }
+
+  .login-btn1{
+    width: 40vw;
     margin: 6vh 0;
     font-size: 3vw;
   }

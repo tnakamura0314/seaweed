@@ -5,14 +5,14 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   PASSWORD_REGEX = /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]+\z/i.freeze
-  validates_format_of :password, with: PASSWORD_REGEX, message: 'Include both letters and numbers'
+  validates_format_of :password, with: PASSWORD_REGEX, message: 'は文字と数字の両方を含めてください'
 
   with_options presence: true do
     validates :nickname
     validates :birthday
   end
 
-  with_options numericality: { other_than: 1, message: "Select"} do
+  with_options numericality: { other_than: 1, message: "を選択してください"} do
     validates :sex_id
     validates :position_id
     validates :household_id

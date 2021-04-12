@@ -13,3 +13,8 @@ ja:
         position_id: 職業
         household_id: 家族構成
 
+      food:
+        name: 食品名
+        number: 数量
+        deadline: 賞味期限/消費期限
+        quantity_id: 数量呼称

@@ -2,3 +2,14 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
+
+ja:
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+        birthday: 生年月日
+        sex_id: 性別
+        position_id: 職業
+        household_id: 家族構成
+

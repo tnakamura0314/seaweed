@@ -20,6 +20,7 @@ class User < ApplicationRecord
 
   has_many :foods
   has_many :posts
+  has_many :recipes
 
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :sex

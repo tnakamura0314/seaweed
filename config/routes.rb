@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :food_consumptions, only: [:index]
   resources :food_losses, only: [:index]
   resources :posts, only: [:index, :create]
+  resources :recipes
 
   get 'posts/:id', to: 'posts#checked'
 end

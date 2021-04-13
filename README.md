@@ -145,6 +145,7 @@ Seaweedとは、海藻という意味の言葉である。
 
 - has_many :foods
 - has_many :posts
+- has_many :recipes
 
 
 ## foodsテーブル
@@ -169,6 +170,19 @@ Seaweedとは、海藻という意味の言葉である。
 | ----------- | ---------- | ------------------------------ |
 | text        | text       |                                |
 | checked     | boolean    |                                |
+| user        | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
+
+## recipesテーブル
+
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| name        | string     | null: false                    |
+| food_text   | text       | null: false                    |
+| recipe_text | text       | null: false                    |
 | user        | references | null: false, foreign_key: true |
 
 ### Association

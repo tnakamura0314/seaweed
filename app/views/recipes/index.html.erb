@@ -1,6 +1,51 @@
 <%= render "shared/header" %>
 
-<div>
+<div class = "food">
+  <div class='food-title'>
+    <div class='title'>
+    レシピ一覧
+    </div>
+  </div>
+  <%# <div class = "sort">
+  </div> %>
+  <ul class = "another-page">
+    <li><%= link_to '買い物メモ', posts_path, class: "page-menu1" %></li>
+    <li><%= link_to '食品一覧', foods_path, class: "page-menu1" %></li>
+    <li><%= link_to '消費一覧', food_consumptions_path, class: "page-menu1" %></li>
+    <li><%= link_to '廃棄一覧', food_losses_path, class: "page-menu2" %></li>
+  </ul>
+
+  <div class='food-contents'>
+    <ul class='food-lists'>
+      <% @recipes.each do |recipe|%>
+          <li class='list'>
+            <%= link_to recipe_path(recipe.id), class: 'food-link' do %>
+              <div class='food-img-content'>
+                <%= image_tag recipe.image, class: "food-img" if recipe.image.attached? %>
+              </div>
+              <div class='food-info'>
+                <div class='food-name'>
+                  <div class = 'food-name1'>
+                    【食品名】
+                  </div>
+                  <div class = 'food-name2'>
+                    <%= recipe.name %>
+                  </div>
+                </div>
+                <div class='food-quantity'>
+                  <div class = 'food-quantity1'>
+                    【レシピ投稿者】
+                  </div>
+                  <div class = 'ood-quantity2'>
+                    <%= recipe.user.nickname %>
+                  </div>
+                </div>
+              </div>
+            <% end %>
+          </li>
+      <% end %>
+    </ul>
+  </div>
 </div>
 
 

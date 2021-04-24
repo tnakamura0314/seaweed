@@ -2,7 +2,7 @@ class PostsController < ApplicationController
   before_action :authenticate_user!, only: [:index, :create, :checked]
 
   def index
-    @posts = Post.all.order(id: "DESC")
+    @posts = Post.order(id: "DESC")
   end
 
   def create

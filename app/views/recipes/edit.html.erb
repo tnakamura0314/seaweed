@@ -8,7 +8,7 @@
     <div class = "foods-sell-title">
       <h2 class="foods-sell-title1">レシピ情報を投稿</h2>
     </div>
-    <%= form_with model: @recipe, url: recipes_path(@recipe.id), local: true do |f| %>
+    <%= form_with model: @recipe, url: recipe_path(@recipe.id), local: true do |f| %>
 
       <%= render 'shared/error_messages', model: f.object %>
 
@@ -45,8 +45,8 @@
 
       <%# 下部ボタン %>
       <div class="sell-btn-contents">
-        <%= f.submit "投稿する" ,class:"sell-btn" %>
-        <%=link_to 'もどる', recipes_path, class:"back-btn" %>
+        <%= f.submit "編集する", class:"sell-btn" %>
+        <%=link_to 'もどる', recipe_path, class:"back-btn" %>
       </div>
       <%# /下部ボタン %>
     <% end %>

@@ -28,11 +28,12 @@ class RecipesController < ApplicationController
   end
 
   def update
+    @recipe = Recipe.find(params[:id])
     redirect_to root_path  unless @recipe.user_id == current_user.id
     if @recipe.update(recipe_params)
       redirect_to recipe_path
     else
-    render :edit
+      render :edit
     end
   end
 

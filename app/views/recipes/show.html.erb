@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+
+<div class = "recipe-show">
+  <div class="item-box">
+    <h2 class="name">
+      <%= @recipe.name %>
+    </h2>
+    <div class="item-img-content">
+      <%= image_tag @recipe.image ,class:"item-box-img" if @recipe.image.attached? %>
+    </div>
+  </div>
+</div>
+
+<div class = "edit-delete">
+  <% if @recipe.user_id == current_user.id %>
+    <%= link_to "レシピの編集", edit_recipe_path, method: :get, class: "item-red-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "削除", recipe_path, method: :delete, class:"item-destroy" %>
+  <% end %>
+</div>
+
+<div class = "detail-main">
+  <table class = "detail-table">
+    <tbody>
+      <tr>
+        <th class = "detail-item">投稿者</th>
+        <td class = "detail-value"><%= @recipe.user.nickname %></td>
+      </tr>
+      <tr>
+        <th class = "detail-item">食材</th>
+        <td class = "detail-value"><%= @recipe.food_text %></td>
+      </tr>
+      <tr>
+        <th class = "detail-item">レシピ</th>
+        <td class = "detail-value"><%= @recipe.recipe_text %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<%= render "shared/add2_to_btn" %>
+
+<%= render "shared/footer" %>

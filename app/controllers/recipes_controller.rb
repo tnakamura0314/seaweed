@@ -19,7 +19,21 @@ class RecipesController < ApplicationController
   end
 
   def show
-    @recipe = Recipe.find(params[:id]) 
+    @recipe = Recipe.find(params[:id])
+  end
+
+  def edit
+    @recipe = Recipe.find(params[:id])
+    redirect_to root_path  unless @recipe.user_id == current_user.id
+  end
+
+  def update
+    redirect_to root_path  unless @recipe.user_id == current_user.id
+    if @recipe.update(recipe_params)
+      redirect_to recipe_path
+    else
+    render :edit
+    end
   end
 
   def recipe_params

@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_recipe, only: [:show, :edit, :update, :destroy]
 
   def index
     @recipes = Recipe.all
@@ -19,16 +20,13 @@ class RecipesController < ApplicationController
   end
 
   def show
-    @recipe = Recipe.find(params[:id])
   end
 
   def edit
-    @recipe = Recipe.find(params[:id])
     redirect_to root_path  unless @recipe.user_id == current_user.id
   end
 
   def update
-    @recipe = Recipe.find(params[:id])
     redirect_to root_path  unless @recipe.user_id == current_user.id
     if @recipe.update(recipe_params)
       redirect_to recipe_path
@@ -38,7 +36,6 @@ class RecipesController < ApplicationController
   end
 
   def destroy
-    @recipe = Recipe.find(params[:id])
     if @recipe.user_id == current_user.id
       @recipe.destroy
       redirect_to recipes_path
@@ -48,5 +45,9 @@ class RecipesController < ApplicationController
   private
   def recipe_params
     params.require(:recipe).permit(:image, :name, :food_text, :recipe_text).merge(user_id: current_user.id)
+  end
+
+  def set_recipe
+    @recipe = Recipe.find(params[:id])
   end
 end

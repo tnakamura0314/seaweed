@@ -76,3 +76,57 @@
   border: 3px solid #BCBCBE;
   font-size: 20px;
 }
+
+/* スマホ表示時 */
+@media (max-width: 599px) {
+  .item-box-img {
+    height: 30vh;
+    width: 90vw;
+  }
+
+  .detail-main{
+    width: 90vw;
+    margin-left: 5vw;
+  }
+}
+
+/* タブレット表示時 */
+@media (min-width:600px) and (max-width:1024px) {
+  .item-box>.name {
+    font-size: 60px;
+    border-bottom:8px solid #88B6A9;
+    margin-bottom: 4vh;
+  }
+
+  .item-box-img {
+    height: 60vh;
+    width: 80vw;
+  }
+
+  .item-red-btn {
+    font-size: 30px;
+  }
+  
+  .or-text {
+    font-size: 30px;
+  }
+  
+  .item-destroy {
+    font-size: 30px;
+  }
+
+  .detail-main{
+    width: 80vw;
+    margin-left: 10vw;
+  }
+
+  .detail-item {
+    border: 5px solid #BCBCBE;
+    font-size: 30px;
+  }
+  
+  .detail-value {
+    border: 5px solid #BCBCBE;
+    font-size: 30px;
+  }
+}
